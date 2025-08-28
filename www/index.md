@@ -8,14 +8,14 @@ description: "Unibots UK is an autonomous robotics competition which university 
 
 Unibots UK is an autonomous robotics competition which all university clubs can enter for free, and win cash prizes!
 
-![UniBots UK Logo](/photos/unibots.png){: width="200" height="200" }
+![UniBots UK Logo](Photos/unibots.png){: width="200" height="200" }
 
 ---
 
 ## Organised by
 
-![Cambridge University Robotics Logo](/photos/CURLOGO_TEXT.svg){: height="100" }
-![Heriot-Watt Robotics Society Logo](/photos/hwrobotics.jpg){: height="100" }
+![Cambridge University Robotics Logo](Photos/CURLOGO_TEXT.svg){: height="100" }
+![Heriot-Watt Robotics Society Logo](Photos/hwrobotics.jpg){: height="100" }
 
 ---
 
@@ -34,7 +34,7 @@ Thank you everyone who attended Unibots 2025, we are so incredibly grateful for 
 
 ## Intermediate-level Competition
 
-![Competition photo](/photos/DSC_2716-min.jpg)
+![Competition photo](Photos/DSC_2716-min.jpg)
 
 We designed the competition to allow anyone who has elementary experience with robotics to be able to build and compete.  
 
@@ -46,7 +46,7 @@ Our competition will be great fun for competitors with any level of experience!
 
 ## Competition Day
 
-![Competition day photo](/photos/DSC_2517-min.jpg)
+![Competition day photo](Photos/DSC_2517-min.jpg)
 
 The competition will be held at the University of Cambridge, right after term ends for most universities.  
 
@@ -56,7 +56,7 @@ Not to mention, it's also a good excuse to visit Cambridge!
 
 ---
 
-![Competition crowd photo](/photos/DSC_2866-min.jpg)
+![Competition crowd photo](Photos/DSC_2866-min.jpg)
 
 If all this sounds fun, sign up for our competition! Sign-ups for 2026 will be announced in due course.
 
@@ -72,8 +72,8 @@ If all this sounds fun, sign up for our competition! Sign-ups for 2026 will be a
 
 ## 2025 Sponsors
 
-![Accu logo](/photos/Website-Logo_BoltBlue.png){: height="100" }  
+![Accu logo](Photos/Website-Logo_BoltBlue.png){: height="100" }  
 [Accu](https://www.accu.co.uk/) is a leading provider of engineering components, and is a great place to source all the parts you need for Unibots 2025.
 
-![National Robotarium logo](/photos/NR_Logo.png){: height="100" }  
+![National Robotarium logo](Photos/NR_Logo.png){: height="100" }  
 [The National Robotarium](https://thenationalrobotarium.com/) is a global research institute at Heriot-Watt University. We create innovative solutions to global challenges, working directly with industry to test and develop robotic, AI and automated technologies and rapidly move pioneering research from lab to market.
