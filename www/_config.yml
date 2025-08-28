@@ -6,7 +6,8 @@ author:
 # The `>` after `description:` means to ignore line-breaks until next key.
 # If you want to omit the line-break after the end of text, use `>-` instead.
 description: >
-Final website detailing the output from our research. Links to individual articles written by each person can be found in main body of different sections
+  Final website detailing the output from our research. Links to individual
+  articles written by each person can be found in main body of different sections
 
 # Build settings
 
