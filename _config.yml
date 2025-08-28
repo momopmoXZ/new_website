@@ -9,6 +9,10 @@ description: >
   Final website detailing the output from our research. Links to individual
   articles written by each person can be found in main body of different sections
 
+# GitHub Pages settings
+url: "https://muhie.github.io"
+baseurl: "/unibots_jekyll_deployment"
+
 # Build settings
 
 # If you clone the Minima repo and build locally, use this setting.
