@@ -1,0 +1,16 @@
+Thursday 16 May 2024 (Morning) Project proposal presentations.
+
+Get in contact with Kitty
+
+
+
+Strengths:
+
+Livvy - materials, heat transfer, SolidWorks (mid)
+Caio - materials, mechanisms, SolidWorks (mid)
+Dan - structures, mechanisms, SolidWorks (mid)
+
+Try to use OpenSCAD instead of SolidWorks as it's open source
+
+
+No more than about a 1000 words for Thursday's Presentation
