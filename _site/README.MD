@@ -13,7 +13,7 @@
 3. Build the website
 ```bundle exec jekyll build```
 4. Run the webserver
-```bundle exec jekyll serve --port=4001```
+```bundle exec jekyll serve --port=4002 --baseurl=""```
 
 
-The website should now be avalible at ```localhost:4001``` on your local machine
+The website should now be available at ```localhost:4002``` on your local machine
