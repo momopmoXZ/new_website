@@ -81,7 +81,7 @@ title: Home
 
     <div class="section">
         <div id="info-buttons" class="row">
-            <a href=["https://drive.google.com/file/d/1scq6q7McX6DpTbHr1WvcVkBubwKbesd2/view](https://drive.google.com/file/d/1DvD_ty8YRV7zJ1_tbRLzleKyjqemi5pc/view)" class="button intro doc">2026 RULEBOOK</a>
+            <a href="https://drive.google.com/file/d/1DvD_ty8YRV7zJ1_tbRLzleKyjqemi5pc/view" class="button intro doc">2026 RULEBOOK</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEvT1Q8A_u6wGSomogfAurt6BKIho082s9yv_fDwZlbdy3TQ/viewform" class="button rulebook">2026 SIGN UPS</a>
         </div>
         <div id="info-buttons" class="row">
