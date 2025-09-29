@@ -32,15 +32,14 @@ title: Home
         </div>
         <div id="prizes-subsidies" class="row">
             <div id="header-text">
-                <h2>2025 & 2026!</h2>
-                You asked and we listened!<br>
-                Thank you everyone who attended Unibots 2025, we are so incredibly grateful for every team who put so much work into their robots. Keep an eye on this page for plans for 2026!
+                <h2>2026!</h2>
+                It's official!<br>
+                Unibots 2026 is officially happening! After the success of last year, we decided to bring back Unibots bigger and better than ever with a new format and more events.
             </div>
             <div id="header-text">
-                <h2>Competition Details</h2>
-                Date: Sat 29th and Sun 30th Mar 2025<br>
-                Time: 1000-1700<br>
-                Venue: Department of Engineering, University of Cambridge, Trumpington St, Cambridge CB2 1PZ, United Kingdom
+                <h2>New for 2026</h2>
+                This year we are introducing Regionals! We want to help everyone across the country and enable them to have a taste of the arena and competition format before the Finals in July, and to help you practice in a tournament setting.<br> 
+                More information to come soon!
             </div>
         </div>
     </div>
@@ -52,7 +51,7 @@ title: Home
                 <div class="desc">
                     <h3>Intermediate-level Competition</h3>
                     <p>We designed the competition to allow anyone who has elementary experience with robotics to be able to build and compete.</p>
-                    <p>For 2025, robots will go head to head to compete in the arena, trying to collect as many balls as possible.</p>
+                    <p>For 2026, robots will go head to head to compete in the arena, trying to collect as many ping pong and steel balls as possible.</p>
                     <p>Our competition will be great fun for competitors with any level of experience!</p>
                 </div>
             </div>
@@ -60,9 +59,12 @@ title: Home
                 <img src="{{ '/assets/images/DSC_2517-min.jpg' | relative_url }}">
                 <div class="desc">
                     <h3>Competition Day</h3>
-                    <p>The competition will be held at the University of Cambridge, right after term ends for most universities.</p>
+                    <p>The regionals will be held across the UK before the final event as a one day competition, with dates to be announced soon. In these you'll get to practice and improve your robot to be one step closer to winning the two day event in July</p>
                     <p>The competition is a great way to meet other students that are as passionate about robotics as you are.</p>
-                    <p>Not to mention, it's also a good excuse to visit Cambridge!</p>
+                    <p>Dates for Regionals (one-day event) - Exact Locations to be confirmed by December:<br>
+    Cambridge: March 2026 (date TBD).<br>
+    Edinburgh: Saturday 28 February 2026 at Heriot-Watt University.<br>
+</p>
                 </div>
             </div>
         </div>
@@ -79,11 +81,11 @@ title: Home
 
     <div class="section">
         <div id="info-buttons" class="row">
-            <a href="https://drive.google.com/file/d/1scq6q7McX6DpTbHr1WvcVkBubwKbesd2/view" class="button intro doc">2025 INTRO DOC</a>
-            <a href="https://drive.google.com/file/d/1OJisX0gkeTVuipf9yghD1U9o-yvi4pMe/view" class="button rulebook">2025 RULEBOOK</a>
+            <a href=["https://drive.google.com/file/d/1scq6q7McX6DpTbHr1WvcVkBubwKbesd2/view](https://drive.google.com/file/d/1DvD_ty8YRV7zJ1_tbRLzleKyjqemi5pc/view)" class="button intro doc">2026 RULEBOOK</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEvT1Q8A_u6wGSomogfAurt6BKIho082s9yv_fDwZlbdy3TQ/viewform" class="button rulebook">2026 SIGN UPS</a>
         </div>
         <div id="info-buttons" class="row">
-            <a href="" class="button signup">SIGN UPS CURRENTLY CLOSED</a>
+            <a href="https://www.instagram.com/unibots_uk/" class="button signup">INSTAGRAM</a>
             <a href="https://discord.gg/N2xYcKAT5a" class="button discord">DISCORD SERVER</a>
         </div>
     </div>
@@ -93,7 +95,7 @@ title: Home
             <h2>2025 Sponsors</h2>
             <div class="sponsor">
                 <img src="{{ '/assets/images/Website-Logo_BoltBlue.png' | relative_url }}" height="100" alt="Accu logo" class="sponsor-logo">
-                <p class="sponsor-description"><a href="https://www.accu.co.uk/" target="_blank">Accu</a> is a leading provider of engineering components, and is a great place to source all the parts you need for Unibots 2025.</p>
+                <p class="sponsor-description"><a href="https://www.accu.co.uk/" target="_blank">Accu</a> is a leading provider of engineering components, and is a great place to source all the parts you need for Unibots 2026.</p>
             </div>
             <div class="sponsor">
                 <img src="{{ '/assets/images/NR_Logo.png' | relative_url }}" height="100" alt="National Robotarium logo" class="sponsor-logo">
