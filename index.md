@@ -27,6 +27,7 @@ title: Home
                 <div class="row">
                     <img src="{{ '/assets/images/CURLOGO_TEXT.svg' | relative_url }}" height="100" class="logo-about cur" alt="Cambridge University Robotics Logo">
                     <img src="{{ '/assets/images/hwrobotics.jpg' | relative_url }}" class="logo-about hw" alt="Heriot-Watt Robotics Society Logo">
+                    <img src="{{ '/assets/images/Queen_Mary_Logo.jpeg' | relative_url }}" class="logo-about qm" alt="Quen Mary Robotics Society Logo">
                 </div>
             </div>
         </div>
@@ -93,10 +94,10 @@ title: Home
     <div class="section">
         <div class="content">
             <h2>2025 Sponsors</h2>
-            <div class="sponsor">
+           <!-- <div class="sponsor">
                 <img src="{{ '/assets/images/Website-Logo_BoltBlue.png' | relative_url }}" height="100" alt="Accu logo" class="sponsor-logo">
                 <p class="sponsor-description"><a href="https://www.accu.co.uk/" target="_blank">Accu</a> is a leading provider of engineering components, and is a great place to source all the parts you need for Unibots 2026.</p>
-            </div>
+            </div> -->
             <div class="sponsor">
                 <img src="{{ '/assets/images/NR_Logo.png' | relative_url }}" height="100" alt="National Robotarium logo" class="sponsor-logo">
                 <p class="sponsor-description"><a href="https://thenationalrobotarium.com/" target="_blank">The National Robotarium</a> is a global research institute at Heriot-Watt University. We create innovative solutions to global challenges, working directly with industry to test and develop robotic, AI and automated technologies and rapidly move pioneering research from lab to market.</p>
