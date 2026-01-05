@@ -62,9 +62,10 @@ title: Home
                     <h3>Competition Day</h3>
                     <p>The regionals will be held across the UK before the final event as a one day competition, with dates to be announced soon. In these you'll get to practice and improve your robot to be one step closer to winning the two day event in July</p>
                     <p>The competition is a great way to meet other students that are as passionate about robotics as you are.</p>
-                    <p>Dates for Regionals (one-day event) - Exact Locations to be confirmed by December:<br>
-    Cambridge: March 2026 (date TBD).<br>
+                    <p>Dates for Regionals (one-day event):<br>
+
     Edinburgh: Saturday 28 February 2026 at Heriot-Watt University.<br>
+    Cambridge: March 2026 (date TBD).<br>
 </p>
                 </div>
             </div>
