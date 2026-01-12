@@ -3,43 +3,45 @@ layout: default
 title: FAQs
 ---
 
-<div class="blog-container">
-    <div class="blog-header">
-        <h1>BotsBlog</h1>
-        <p>Latest updates and news from Unibots</p>
-    </div>
+<div class="faq">
+  <div class="faq-header">
+    <h1>Frequently Asked Questions</h1>
+    <p>Click a question to expand the answer.</p>
+  </div>
 
-    <div class="blog-posts">
-        {% for post in site.posts %}
-        <article class="blog-post">
-            <header class="post-header">
-                <h2 class="post-title">
-                    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                </h2>
-                <div class="post-meta">
-                    <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
-                        {{ post.date | date: "%B %d, %Y" }}
-                    </time>
-                    {% if post.categories %}
-                    <div class="post-categories">
-                        {% for category in post.categories %}
-                        <span class="category-tag">{{ category }}</span>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-                </div>
-            </header>
-            
-            {% if post.excerpt %}
-            <div class="post-excerpt">
-                {{ post.excerpt }}
-            </div>
-            {% endif %}
-            
-            <div class="post-read-more">
-                <a href="{{ post.url | relative_url }}" class="read-more-link">Read More →</a>
-            </div>
-        </article>
-        {% endfor %}
+  <details>
+    <summary>What is this website for?</summary>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae mi eu justo malesuada aliquam. Integer et tincidunt urna. Donec non posuere nunc.</p>
     </div>
+  </details>
+
+  <details>
+    <summary>How can I contact the team?</summary>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac dolor ac neque aliquet gravida. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Where can I find documentation?</summary>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere ligula nec arcu cursus, non tincidunt orci consectetur. Mauris sit amet mi sed arcu fermentum sodales.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Is there a roadmap?</summary>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a dolor vel sapien varius bibendum. Quisque eu aliquet lorem, eget vulputate orci.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>How do I contribute?</summary>
+    <div class="answer">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pharetra, orci sed iaculis volutpat, nisl nisl gravida sapien, eget vulputate eros odio sed nulla.</p>
+    </div>
+  </details>
+
 </div>
