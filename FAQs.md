@@ -8,6 +8,6 @@ title: FAQs
         <h1>FAQs</h1>
     </div>
 
-    {% include faqs.html %}
+    {% include FAQs.html %}
 </div>
 
