@@ -1,6 +1,6 @@
 ---
 layout: default
-title: FAQs
+title: faqs
 ---
 
 <div class="about-container">
@@ -8,6 +8,6 @@ title: FAQs
         <h1>FAQs</h1>
     </div>
 
-    {% include FAQs.html %}
+    {% include faqs.html %}
 </div>
 
