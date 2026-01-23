@@ -55,18 +55,17 @@
 
     <div class="u-grid">
         <div class="u-card">
-            <h3>Regionals — Edinburgh</h3>
+            <h3>Regionals - Edinburgh</h3>
             <p><strong>Date:</strong> February 28</p>
             <p><strong>Venue:</strong> The National Robotarium, Heriot-Watt University, Edinburgh, EH14 4AS</p>
             <p>
-                For the first time, Unibots introduces Regionals — a lower-stakes chance to experience the arena and
-                competition format ahead of Finals. Regionals do not affect qualification for Finals, but they can help
-                teams get there.
+                The first set of regionals this year will be held at Heriot-Watt University. Regionals do not affect qualification for Finals, but they can help
+                you get practice in for the final event!
             </p>
         </div>
 
         <div class="u-card">
-            <h3>Regionals — Cambridge</h3>
+            <h3>Regionals - Cambridge</h3>
             <p><strong>Date:</strong> March 27 (TBC)</p>
             <p><strong>Venue:</strong> University of Cambridge, Cambridge, CB2 1QA</p>
             <p>
@@ -76,12 +75,12 @@
         </div>
 
         <div class="u-card">
-            <h3>Finals — London</h3>
+            <h3>Finals - London</h3>
             <p><strong>Date:</strong> Early July 2026</p>
             <p><strong>Venue:</strong> TBC (London)</p>
             <p>
-                The 2026 Finals are planned for London to simplify travel for teams nationwide. We’re exploring company
-                conference spaces and community venues — if you can offer a venue, please get in touch.
+                The 2026 Finals are planned for London to simplify travel for teams nationwide! We’re exploring company
+                conference spaces and community venues - if you can offer a venue, please get in touch.
             </p>
         </div>
     </div>
@@ -96,11 +95,16 @@
     </div>
 </section>
 
+
+
+
+<!--sponsor levels-->
+
 <section class="about-section">
     <h2>Sponsorship Packages</h2>
 
     <div class="u-cards-3">
-        <div class="u-package">
+        <div class="u-package u-package--bronze">
             <div class="u-package__head">
                 <h3>Bronze Sponsor</h3>
                 <div class="u-price">£200</div>
@@ -112,7 +116,7 @@
             </ul>
         </div>
 
-        <div class="u-package">
+        <div class="u-package u-package--silver">
             <div class="u-package__head">
                 <h3>Silver Sponsor</h3>
                 <div class="u-price">£500</div>
@@ -139,130 +143,60 @@
     </div>
 </section>
 
-<style>
-    /* Layout helpers scoped to this include (keeps your existing layout intact) */
-    .u-grid {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 16px;
-        margin-top: 12px;
-    }
-
-    .u-card {
-        border: 1px solid rgba(255,255,255,0.12);
-        border-radius: 14px;
-        padding: 16px;
-        background: rgba(255,255,255,0.04);
-    }
-
-    .u-card--muted {
-        margin-top: 16px;
-        background: rgba(255,255,255,0.03);
-    }
-
-    .u-cards-3 {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 16px;
-        margin-top: 12px;
-    }
-
-    .u-package {
-        border: 1px solid rgba(255,255,255,0.12);
-        border-radius: 16px;
-        padding: 18px;
-        background: rgba(255,255,255,0.04);
-    }
-
-    .u-package--highlight {
-        border: 2px solid rgba(255, 193, 7, 0.55);
-        background: linear-gradient(
-            180deg,
-            rgba(255, 193, 7, 0.12),
-            rgba(255, 255, 255, 0.9)
-        );
-        box-shadow:
-            0 0 0 1px rgba(255, 193, 7, 0.25),
-            0 8px 24px rgba(255, 193, 7, 0.25),
-            0 0 40px rgba(255, 193, 7, 0.15);
-    }
 
 
-    .u-package__head {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        gap: 12px;
-        margin-bottom: 10px;
-    }
 
-    .u-price {
-        font-weight: 700;
-        font-size: 1.1rem;
-        white-space: nowrap;
-    }
 
-    .u-package ul, .u-card ul {
-        margin: 0;
-        padding-left: 18px;
-    }
-
-    @media (max-width: 900px) {
-        .u-grid, .u-cards-3 {
-            grid-template-columns: 1fr;
-        }
-    }
-</style>
+<!-- carousel-->
 
 
 <section class="about-section">
   <h2>Previous Sponsors</h2>
 
-  <div class="sponsor-carousel" aria-label="Previous sponsors carousel">
-    <button class="sponsor-nav sponsor-nav--left" type="button" aria-label="Scroll left">‹</button>
+  <div class="sponsor-marquee" aria-label="Previous sponsors">
+    <div class="sponsor-marquee__track">
+      <!-- set A -->
+      <div class="sponsor-chip"><img src="/assets/images/NR.png" alt="National Robotarium" loading="lazy"></div>
+      <div class="sponsor-chip"><img src="/assets/images/Kaikaku.jpg" alt="Kaikaku" loading="lazy"></div>
+      <div class="sponsor-chip"><img src="/assets/images/RS.svg" alt="RS" loading="lazy"></div>
+      <div class="sponsor-chip"><img src="/assets/images/Accu.png" alt="Accu" loading="lazy"></div>
 
-    <div class="sponsor-track" id="sponsorTrack">
-      <div class="sponsor-slide"><img src="/assets/images/NR.png" alt="National Robotarium" loading="lazy"></div>
-      <div class="sponsor-slide"><img src="/assets/images/Kaikaku.jpg" alt="Kaikaku" loading="lazy"></div>
-      <div class="sponsor-slide"><img src="/assets/images/RS.svg" alt="RS" loading="lazy"></div>
-      <div class="sponsor-slide"><img src="/assets/images/Accu.png" alt="Accu" loading="lazy"></div>
+      <!-- set B (duplicate for seamless loop) -->
+      <div class="sponsor-chip"><img src="/assets/images/NR.png" alt="National Robotarium" loading="lazy"></div>
+      <div class="sponsor-chip"><img src="/assets/images/Kaikaku.jpg" alt="Kaikaku" loading="lazy"></div>
+      <div class="sponsor-chip"><img src="/assets/images/RS.svg" alt="RS" loading="lazy"></div>
+      <div class="sponsor-chip"><img src="/assets/images/Accu.png" alt="Accu" loading="lazy"></div>
     </div>
-
-    <button class="sponsor-nav sponsor-nav--right" type="button" aria-label="Scroll right">›</button>
   </div>
 </section>
 
 <style>
-  .sponsor-carousel{
-    position: relative;
+  .sponsor-marquee{
     margin-top: 12px;
-    padding: 6px 44px; /* room for nav buttons */
+    overflow: hidden;
     border-radius: 16px;
     background: rgba(0,0,0,0.03);
     border: 1px solid rgba(0,0,0,0.08);
+    padding: 10px 0;
   }
 
-  .sponsor-track{
+  .sponsor-marquee__track{
     display: flex;
     gap: 14px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    padding: 10px 6px;
+    width: max-content;
+    animation: sponsor-scroll 22s linear infinite;
+    will-change: transform;
   }
 
-  .sponsor-track::-webkit-scrollbar{ height: 10px; }
-  .sponsor-track::-webkit-scrollbar-thumb{
-    background: rgba(0,0,0,0.15);
-    border-radius: 999px;
+  /* Pause on hover (nice on desktop) */
+  .sponsor-marquee:hover .sponsor-marquee__track{
+    animation-play-state: paused;
   }
 
-  .sponsor-slide{
-    scroll-snap-align: start;
+  .sponsor-chip{
     flex: 0 0 auto;
-    height: 70px;                 /* single source of truth for logo height */
-    min-width: 180px;             /* keeps them side-by-side and readable */
+    height: 70px;                 /* same height for all */
+    min-width: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -271,9 +205,10 @@
     border: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 6px 16px rgba(0,0,0,0.06);
     padding: 10px 14px;
+    margin-left: 14px; /* helps initial spacing look even */
   }
 
-  .sponsor-slide img{
+  .sponsor-chip img{
     height: 100%;
     width: auto;
     max-width: 100%;
@@ -281,62 +216,18 @@
     display: block;
   }
 
-  .sponsor-nav{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 34px;
-    height: 34px;
-    border-radius: 999px;
-    border: 1px solid rgba(0,0,0,0.12);
-    background: rgba(255,255,255,0.9);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.10);
-    cursor: pointer;
-    user-select: none;
-  }
-  .sponsor-nav--left{ left: 8px; }
-  .sponsor-nav--right{ right: 8px; }
-
-  .sponsor-nav:hover{
-    background: #fff;
+  /* Move by half the track (because we duplicated the set) */
+  @keyframes sponsor-scroll{
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
   }
 
   @media (max-width: 600px){
-    .sponsor-slide{ min-width: 150px; height: 62px; }
-    .sponsor-carousel{ padding: 6px 40px; }
+    .sponsor-chip{ min-width: 150px; height: 62px; }
+  }
+
+  /* Respect reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .sponsor-marquee__track{ animation: none; }
   }
 </style>
-
-<script>
-  (function () {
-    const track = document.getElementById('sponsorTrack');
-    if (!track) return;
-
-    const leftBtn = track.parentElement.querySelector('.sponsor-nav--left');
-    const rightBtn = track.parentElement.querySelector('.sponsor-nav--right');
-
-    const step = () => Math.min(track.clientWidth * 0.75, 420);
-
-    leftBtn?.addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
-    rightBtn?.addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
-
-    // auto-scroll left -> right, loops back (pauses on hover/focus)
-    let timer = null;
-    const start = () => {
-      stop();
-      timer = setInterval(() => {
-        const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
-        track.scrollTo({ left: atEnd ? 0 : track.scrollLeft + 220, behavior: 'smooth' });
-      }, 2500);
-    };
-    const stop = () => { if (timer) clearInterval(timer); timer = null; };
-
-    track.addEventListener('mouseenter', stop);
-    track.addEventListener('mouseleave', start);
-    track.addEventListener('focusin', stop);
-    track.addEventListener('focusout', start);
-
-    start();
-  })();
-</script>
-
