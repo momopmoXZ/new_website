@@ -98,8 +98,6 @@
 
 
 
-<!--sponsor levels-->
-
 <section class="about-section">
     <h2>Sponsorship Packages</h2>
 
@@ -143,91 +141,111 @@
     </div>
 </section>
 
-
-
-
-
-<!-- carousel-->
-
-
 <section class="about-section">
-  <h2>Previous Sponsors</h2>
+    <h2>Previous Sponsors</h2>
 
-  <div class="sponsor-marquee" aria-label="Previous sponsors">
-    <div class="sponsor-marquee__track">
-      <!-- set A -->
-      <div class="sponsor-chip"><img src="/assets/images/NR.png" alt="National Robotarium" loading="lazy"></div>
-      <div class="sponsor-chip"><img src="/assets/images/Kaikaku.jpg" alt="Kaikaku" loading="lazy"></div>
-      <div class="sponsor-chip"><img src="/assets/images/RS.svg" alt="RS" loading="lazy"></div>
-      <div class="sponsor-chip"><img src="/assets/images/Accu.png" alt="Accu" loading="lazy"></div>
+    <div class="sponsor-marquee" aria-label="Previous sponsors">
+        <div class="sponsor-marquee__track">
+            <!-- set A -->
+            <div class="sponsor-chip"><img src="/assets/images/NR.png" alt="National Robotarium" loading="lazy"></div>
+            <div class="sponsor-chip"><img src="/assets/images/Kaikaku.jpg" alt="Kaikaku" loading="lazy"></div>
+            <div class="sponsor-chip"><img src="/assets/images/RS.svg" alt="RS" loading="lazy"></div>
+            <div class="sponsor-chip"><img src="/assets/images/Accu.png" alt="Accu" loading="lazy"></div>
 
-      <!-- set B (duplicate for seamless loop) -->
-      <div class="sponsor-chip"><img src="/assets/images/NR.png" alt="National Robotarium" loading="lazy"></div>
-      <div class="sponsor-chip"><img src="/assets/images/Kaikaku.jpg" alt="Kaikaku" loading="lazy"></div>
-      <div class="sponsor-chip"><img src="/assets/images/RS.svg" alt="RS" loading="lazy"></div>
-      <div class="sponsor-chip"><img src="/assets/images/Accu.png" alt="Accu" loading="lazy"></div>
+            <!-- set B (duplicate for seamless loop) -->
+            <div class="sponsor-chip"><img src="/assets/images/NR.png" alt="National Robotarium" loading="lazy"></div>
+            <div class="sponsor-chip"><img src="/assets/images/Kaikaku.jpg" alt="Kaikaku" loading="lazy"></div>
+            <div class="sponsor-chip"><img src="/assets/images/RS.svg" alt="RS" loading="lazy"></div>
+            <div class="sponsor-chip"><img src="/assets/images/Accu.png" alt="Accu" loading="lazy"></div>
+        </div>
     </div>
-  </div>
 </section>
 
 <style>
-  .sponsor-marquee{
-    margin-top: 12px;
-    overflow: hidden;
-    border-radius: 16px;
-    background: rgba(0,0,0,0.03);
-    border: 1px solid rgba(0,0,0,0.08);
-    padding: 10px 0;
-  }
+    /* --- Sponsorship glow variants (keeps your existing 3-up layout) --- */
+    .u-package--bronze{
+        border: 2px solid rgba(176, 106, 61, 0.42);
+        box-shadow:
+            0 0 0 1px rgba(176,106,61,0.18),
+            0 8px 22px rgba(176,106,61,0.18),
+            0 0 38px rgba(176,106,61,0.12);
+    }
 
-  .sponsor-marquee__track{
-    display: flex;
-    gap: 14px;
-    width: max-content;
-    animation: sponsor-scroll 22s linear infinite;
-    will-change: transform;
-  }
+    .u-package--silver{
+        border: 2px solid rgba(120, 144, 156, 0.40);
+        box-shadow:
+            0 0 0 1px rgba(120,144,156,0.18),
+            0 8px 22px rgba(120,144,156,0.18),
+            0 0 38px rgba(120,144,156,0.12);
+    }
 
-  /* Pause on hover (nice on desktop) */
-  .sponsor-marquee:hover .sponsor-marquee__track{
-    animation-play-state: paused;
-  }
+    /* Keep your gold glow rule you already added; if not present, this is a good default */
+    .u-package--highlight{
+        border: 2px solid rgba(255, 193, 7, 0.55);
+        box-shadow:
+            0 0 0 1px rgba(255, 193, 7, 0.25),
+            0 8px 24px rgba(255, 193, 7, 0.25),
+            0 0 40px rgba(255, 193, 7, 0.15);
+    }
 
-  .sponsor-chip{
-    flex: 0 0 auto;
-    height: 70px;                 /* same height for all */
-    min-width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 14px;
-    background: #fff;
-    border: 1px solid rgba(0,0,0,0.08);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-    padding: 10px 14px;
-    margin-left: 14px; /* helps initial spacing look even */
-  }
+    /* --- Full-width, no-background infinite logo strip --- */
+    .sponsor-marquee{
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
 
-  .sponsor-chip img{
-    height: 100%;
-    width: auto;
-    max-width: 100%;
-    object-fit: contain;
-    display: block;
-  }
+        overflow: hidden;
+        padding: 10px 0;
+        background: transparent;
+        border: 0;
+    }
 
-  /* Move by half the track (because we duplicated the set) */
-  @keyframes sponsor-scroll{
-    from { transform: translateX(0); }
-    to   { transform: translateX(-50%); }
-  }
+    .sponsor-marquee__track{
+        display: flex;
+        gap: 24px;
+        width: max-content;
+        animation: sponsor-scroll 22s linear infinite;
+        will-change: transform;
+    }
 
-  @media (max-width: 600px){
-    .sponsor-chip{ min-width: 150px; height: 62px; }
-  }
+    .sponsor-marquee:hover .sponsor-marquee__track{
+        animation-play-state: paused;
+    }
 
-  /* Respect reduced motion */
-  @media (prefers-reduced-motion: reduce){
-    .sponsor-marquee__track{ animation: none; }
-  }
+    .sponsor-chip{
+        flex: 0 0 auto;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        padding: 0 10px;
+    }
+
+    .sponsor-chip img{
+        height: 100%;
+        width: auto;
+        max-width: 240px;
+        object-fit: contain;
+        display: block;
+    }
+
+    @keyframes sponsor-scroll{
+        from { transform: translateX(0); }
+        to   { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 600px){
+        .sponsor-chip{ height: 56px; }
+        .sponsor-chip img{ max-width: 180px; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+        .sponsor-marquee__track{ animation: none; }
+    }
 </style>
