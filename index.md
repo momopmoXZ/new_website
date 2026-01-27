@@ -18,7 +18,7 @@ title: Home
             </div>
             <div id="header-text">
                 <h1>Unibots UK</h1>
-                Unibots UK is an autonomous robotics competition which all university clubs can enter for free, and win cash prizes!
+                Unibots UK is an autonomous robotics competition aimed at University students and clubs, fostering enthusiasm and engineering skills into the next generation of robotics students!
             </div>
         </div>
         <div id="header-about">
@@ -52,7 +52,7 @@ title: Home
                 <div class="desc">
                     <h3>Intermediate-level Competition</h3>
                     <p>We designed the competition to allow anyone who has elementary experience with robotics to be able to build and compete.</p>
-                    <p>For 2026, robots will go head to head to compete in the arena, trying to collect as many ping pong and steel balls as possible.</p>
+                    <p>For 2026, robots will go head to head to compete in the arena, trying to collect as many ping pong and steel ball bearings as possible.</p>
                     <p>Our competition will be great fun for competitors with any level of experience!</p>
                 </div>
             </div>
@@ -76,7 +76,7 @@ title: Home
         <div class="desc-picture-vert">
             <img src="{{ '/assets/images/DSC_2866-min.jpg' | relative_url }}">
             <div class="desc">
-                If all this sounds fun, sign up for our competition! Sign-ups for 2026 will be announced in due course.
+                If all this sounds fun, sign up for our competition!
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@ title: Home
 
     <div class="section">
         <div class="content">
-            <h2>2025 Sponsors</h2>
+            <h2>2026 Sponsors</h2>
            <!-- <div class="sponsor">
                 <img src="{{ '/assets/images/Website-Logo_BoltBlue.png' | relative_url }}" height="100" alt="Accu logo" class="sponsor-logo">
                 <p class="sponsor-description"><a href="https://www.accu.co.uk/" target="_blank">Accu</a> is a leading provider of engineering components, and is a great place to source all the parts you need for Unibots 2026.</p>

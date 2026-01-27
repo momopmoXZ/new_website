@@ -78,7 +78,7 @@ body {
 }
 
 .blog-header p,
-.about-header p {
+.about-header p,ul {
     font-size: 1.2rem;
     color: #666;
 }
@@ -506,7 +506,7 @@ a.button.disabled:hover {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
-.faq p {
+.faq p,ul {
     color: #666;
     margin-top: 0;
 }
