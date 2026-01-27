@@ -1,13 +1,12 @@
 ---
 layout: default
-title: faqs
+title: Support us
 ---
 
 <div class="about-container">
     <div class="about-header">
-        <h1>FAQs For Teams</h1>
+        <h1>Support us</h1>
     </div>
 
-    {% include faqs.html %}
+    {% include support_us.html %}
 </div>
-

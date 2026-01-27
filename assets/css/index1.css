@@ -168,7 +168,7 @@ body {
     font-size: 1.5rem;
 }
 
-.about-section p {
+.about-section p, li {
     color: #666;
     line-height: 1.6;
     margin: 0;
@@ -506,7 +506,7 @@ a.button.disabled:hover {
     font-size: 2rem;
     margin-bottom: 0.5rem;
 }
-.faq p,ul {
+.faq p {
     color: #666;
     margin-top: 0;
 }

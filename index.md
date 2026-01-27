@@ -94,7 +94,7 @@ title: Home
 
     <div class="section">
         <div class="content">
-            <h2>2026 Sponsors</h2>
+            <h2>Proudly supported by:</h2>
            <!-- <div class="sponsor">
                 <img src="{{ '/assets/images/Website-Logo_BoltBlue.png' | relative_url }}" height="100" alt="Accu logo" class="sponsor-logo">
                 <p class="sponsor-description"><a href="https://www.accu.co.uk/" target="_blank">Accu</a> is a leading provider of engineering components, and is a great place to source all the parts you need for Unibots 2026.</p>
