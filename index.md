@@ -33,9 +33,9 @@ title: Home
         </div>
         <div id="prizes-subsidies" class="row">
             <div id="header-text">
-                <h2>2026!</h2>
-                It's official!<br>
-                Unibots 2026 is officially happening! After the success of last year, we decided to bring back Unibots bigger and better than ever with a new format and more events.
+                <h2>The 2026 Season</h2>
+                It's official, the Unibots 2026 season begins!<br>
+                After the success of last year, we decided to bring back Unibots bigger and better than ever with a new format and more events.
             </div>
             <div id="header-text">
                 <h2>New for 2026</h2>
