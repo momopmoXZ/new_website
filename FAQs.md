@@ -4,10 +4,6 @@ title: faqs
 ---
 
 <div class="about-container">
-    <div class="about-header">
-        <h1>FAQs For Teams</h1>
-    </div>
-
     {% include faqs.html %}
 </div>
 
