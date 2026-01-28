@@ -496,12 +496,12 @@ a.button.disabled:hover {
     }
 }
 
-/* FAQ styles */
+/* FAQ styles 
 .faq {
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 2rem;
-}
+}*/
 .faq h1 {
     font-size: 2rem;
     margin-bottom: 0.5rem;
