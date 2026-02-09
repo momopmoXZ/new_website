@@ -1,6 +1,6 @@
 ---
 layout: default
-title: faqs
+title: FAQs
 ---
 
 <div class="about-container">
