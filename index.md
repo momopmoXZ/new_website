@@ -104,7 +104,7 @@ title: Home
                 <p class="sponsor-description"><a href="https://thenationalrobotarium.com/" target="_blank">The National Robotarium</a> is a global research institute at Heriot-Watt University. We create innovative solutions to global challenges, working directly with industry to test and develop robotic, AI and automated technologies and rapidly move pioneering research from lab to market.</p>
             </div>
              <div class="sponsor">
-                <img src="{{ '/assets/images/UKESF-Logo.jpg' | relative_url }}" height="100" alt="UK Electronics Skills Foundation Logo" class="sponsor-logo">
+                <img src="{{ '/assets/images/UKESF-Logo.png' | relative_url }}" height="100" alt="UK Electronics Skills Foundation Logo" class="sponsor-logo">
                 <p class="sponsor-description"><a href="https://www.ukesf.org/" target="_blank">The UK Electronics Skills Foundation</a> are the voice for skills in the UK Electronics Industry. Through engagement with Schools, Universities, and Industry, it is their mission to encourage more young people to study Electronics and pursue careers in the sector.</p>
             </div>
             <div class="sponsor">
