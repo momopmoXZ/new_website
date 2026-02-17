@@ -108,8 +108,8 @@ title: Home
                 <p class="sponsor-description"><a href="https://www.ukesf.org/" target="_blank">The UK Electronics Skills Foundation</a> are the voice for skills in the UK Electronics Industry. Through engagement with Schools, Universities, and Industry, it is their mission to encourage more young people to study Electronics and pursue careers in the sector.</p>
             </div>
             <div class="sponsor">
-                <img src="{{ '/assets/images/ooznest_logo.png' | relative_url }}" height="100" alt="OOznest Logo" class="sponsor-logo">
-                <p class="sponsor-description"><a href="https://ooznest.co.uk/" target="_blank">Ooznest</a> are not just about selling components; they are about empowering you to bring your ideas to life. They provide a wide range of products for mechanical projects, from their aluminium extrusion system to their distinct, application-specific component kits. Ooznest proudly sponsor the Unibots 2026 arena!</p>
+                <img src="{{ '/assets/images/ooznest_logo.png' | relative_url }}" height="100" alt="Ooznest Logo" class="sponsor-logo">
+                <p class="sponsor-description"><a href="https://ooznest.co.uk/" target="_blank">Ooznest</a> are not just about selling components; they are about empowering you to bring your ideas to life. They provide a wide range of products for mechanical projects, from their aluminium extrusion system to their distinct, application-specific component kits. Ooznest proudly sponsor the Unibots UK 2026 arena!</p>
             </div>
         </div>
     </div>
