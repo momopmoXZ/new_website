@@ -17,8 +17,9 @@ title: Album
 		<h1>Unibots UK Albums</h1>
 	</div>
 
-    <section class="about-section">
-        <div class="faq">
+    <div class="about-container">
+
+        <div class="about-content faq">
             <details>
                 <summary>Edinburgh - 2026</summary>
                 <div class="answer">
@@ -27,7 +28,7 @@ title: Album
 	        </details>
 
         </div>
-    </section>
+    </div>
 
     <div class="section">
         {% include sponsors.html %}
