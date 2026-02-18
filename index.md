@@ -93,6 +93,6 @@ title: Home
     </div>
 
     <div class="section">
-        {% include about.html %}
+        {% include sponsors.html %}
     </div>
 </div>
