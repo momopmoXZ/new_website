@@ -27,7 +27,7 @@ title: Home
                 <div class="row">
                     <img src="{{ '/assets/images/CURLOGO_TEXT.svg' | relative_url }}" height="100" class="logo-about cur" alt="Cambridge University Robotics Logo">
                     <img src="{{ '/assets/images/hwrobotics.jpg' | relative_url }}" class="logo-about hw" alt="Heriot-Watt Robotics Society Logo">
-                    <img src="{{ '/assets/images/Queen_Mary_Logo.jpeg' | relative_url }}" class="logo-about qm" alt="Quen Mary Robotics Society Logo">
+                    <img src="{{ '/assets/images/QMES_Logo.png' | relative_url }}" class="logo-about qm" alt="Quen Mary Robotics Society Logo">
                 </div>
             </div>
         </div>
