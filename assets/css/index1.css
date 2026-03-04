@@ -306,7 +306,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Logo row */
+/* Logo row (desktop) */
 
 .row.logos {
     display: flex;
@@ -319,52 +319,31 @@ body {
 /* Logo images */
 
 .logo-about {
-    max-height: 70px;
+    height: 70px;
     width: auto;
+    object-fit: contain;
 }
 
-.logo-about.adsk {
-    max-height: 60px;
-}
-
-.logo-about.cur {
-    box-sizing: border-box;
-    padding: 7px 0;
-}
-
-.logo-about.sot {
-    margin-top: -7px;
-}
-
-/* Tablet */
-
-@media (max-width: 900px) {
-
-    .row.logos {
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    .logo-about {
-        max-height: 60px;
-    }
-
-}
-
-/* Mobile */
+/* MOBILE */
 
 @media (max-width: 600px) {
 
     .row.logos {
         flex-direction: column;
-        gap: 20px;
+        align-items: center;
+        gap: 25px;
     }
 
     .logo-about {
-        max-height: 50px;
+        height: 70px;   /* identical height */
+        width: auto;
+        max-width: 220px; /* prevents extremely wide logos */
+        object-fit: contain;
     }
 
 }
+
+
 #prizes-subsidies {
     display: flex;
     flex-flow: row wrap;
