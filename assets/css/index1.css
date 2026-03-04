@@ -289,57 +289,8 @@ body {
     flex: 1 1 0;
 }
 
-#header-about {
-    display: flex;
-    flex-flow: row wrap;
-    /* justify-content: left; */
-    justify-content: center;
-    align-items: flex-start;
-    column-gap: 40px;
-}
 
-#header-about-item {
-    padding-top: 40px;
 
-}
-
-.row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-
-    gap: 20px;
-}
-
-#header-about > div > .row {
-    flex-wrap: nowrap;
-    height: 70px;
-    /* padding: 20px; */
-}
-
-.small {
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.logo-about {
-    flex-basis: 0;
-    max-height: 70px;
-}
-
-.logo-about.adsk {
-    max-height: 60px;
-}
-
-.logo-about.cur {
-    box-sizing: border-box;
-    padding: 7px 0;
-}
-
-.logo-about.sot {
-    margin-top: -7px;
-}
 #prizes-subsidies {
     display: flex;
     flex-flow: row wrap;
