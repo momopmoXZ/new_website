@@ -1,6 +1,5 @@
 body {
-    width: 100vw;
-
+    width: 100%;
     margin: 0;
 
     font-family: 'Inter', sans-serif;
@@ -26,7 +25,68 @@ body {
     padding: 0 2rem;
 }
 
-.nav-logo img {
+/* Links */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+}
+
+/* Hamburger menu */
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* MOBILE STYLES */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem 0;
+        display: none;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* .nav-logo img {
     transition: transform 0.2s ease;
 }
 
@@ -54,7 +114,7 @@ body {
 .nav-link:hover {
     color: #007bff;
     background-color: #f8f9fa;
-}
+} */
 
 /* Blog and About Page Styles */
 .blog-container,

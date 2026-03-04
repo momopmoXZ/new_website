@@ -19,7 +19,15 @@
           <img src="{{ '/assets/images/unibots.png' | relative_url }}" width="40" height="40" alt="Unibots UK Logo">
         </a>
       </div>
-      <div class="nav-links">
+
+      <!-- Hamburger Button -->
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+
+      <div class="nav-links" id="nav-links">
         <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
         <a href="{{ '/about.html' | relative_url }}" class="nav-link">About</a>
 		    <a href="{{ '/support_us.html' | relative_url }}" class="nav-link">Support us</a>
@@ -31,5 +39,14 @@
   </nav>
 
   {{ content }}
+
+  <script>
+  const menu = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
+
+  menu.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+</script>
 </body>
 </html>
