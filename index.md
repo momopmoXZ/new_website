@@ -82,11 +82,11 @@ title: Home
     </div>
 
     <div class="section">
-        <div id="info-buttons" class="row">
+        <div id="info-buttons" class="button-row">
             <a href="https://linkly.link/2Firr" class="button intro doc">2026 RULEBOOK</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEvT1Q8A_u6wGSomogfAurt6BKIho082s9yv_fDwZlbdy3TQ/viewform" class="button rulebook">2026 SIGN UPS</a>
         </div>
-        <div id="info-buttons" class="row">
+        <div id="info-buttons" class="button-row">
             <a href="https://www.instagram.com/unibots_uk/" class="button signup">INSTAGRAM</a>
             <a href="https://discord.gg/N2xYcKAT5a" class="button discord">DISCORD SERVER</a>
         </div>

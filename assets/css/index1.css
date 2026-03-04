@@ -343,6 +343,14 @@ body {
 
 }
 
+.button-row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
 
 #prizes-subsidies {
     display: flex;
