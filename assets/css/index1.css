@@ -289,8 +289,82 @@ body {
     flex: 1 1 0;
 }
 
+#header-about {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
+#header-about-item {
+    padding-top: 40px;
+    text-align: center;
+}
 
+.small {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Logo row */
+
+.row.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 40px;
+}
+
+/* Logo images */
+
+.logo-about {
+    max-height: 70px;
+    width: auto;
+}
+
+.logo-about.adsk {
+    max-height: 60px;
+}
+
+.logo-about.cur {
+    box-sizing: border-box;
+    padding: 7px 0;
+}
+
+.logo-about.sot {
+    margin-top: -7px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .row.logos {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .logo-about {
+        max-height: 60px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .row.logos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo-about {
+        max-height: 50px;
+    }
+
+}
 #prizes-subsidies {
     display: flex;
     flex-flow: row wrap;
