@@ -26,7 +26,12 @@ title: Album
                     <a href="https://photos.app.goo.gl/boVtXyhih5GZ4Tx2A">Album Link</a>
                 </div>
 	        </details>
-
+            <details>
+                <summary>Cambridge - 2026</summary>
+                <div class="answer">
+                    <a href="https://photos.app.goo.gl/kb7xYsFyBMygs2NU7">Album Link</a>
+                </div>
+	        </details>
         </div>
     </div>
 

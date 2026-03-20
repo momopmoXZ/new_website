@@ -14,7 +14,7 @@ title: Schedule
 
 
 	<div class="about-header">
-		<h1>Schedule - Edinburgh Regional - 28th February</h1>
+		<h1>Schedule - Cambridge Regional - 21st March</h1>
 	</div>
 
     <section class="about-section">
