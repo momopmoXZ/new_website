@@ -8,7 +8,7 @@ title: Home
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="{{ '/css/index1.css' | relative_url }}">
-<link rel="icon" href="{{ '/assets/images/unibots.ico' | relative_url }}">
+<link rel="shortcut icon" type="image/png" href="{{ '/favicon.png' | prepend: site.baseurl }}" >
 
 <div id="index">
     <div id="header">
