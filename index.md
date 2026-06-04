@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Unibots UK
 ---
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +39,7 @@ title: Home
             </div>
             <div id="header-text">
                 <h2>New for 2026</h2>
-                This year we are introducing Regionals! We want to help everyone across the country and enable them to have a taste of the arena and competition format before the Finals in July, and to help you practice in a tournament setting.<br> 
-                More information to come soon!
+                This year we are introducing Regionals! We want to help everyone across the country and enable them to have a taste of the arena and competition format before the Finals in Fune, and to help you practice in a tournament setting.<br> 
             </div>
         </div>
     </div>
@@ -60,13 +59,14 @@ title: Home
                 <img src="{{ '/assets/images/DSC_2517-min.jpg' | relative_url }}">
                 <div class="desc">
                     <h3>Competition Day</h3>
-                    <p>The regionals will be held across the UK before the final event as a one day competition, with dates to be announced soon. In these you'll get to practice and improve your robot to be one step closer to winning the two day event in July</p>
+                    <p>Our regional events are held across the UK, allowing more teams than ever to take part in Unibots! In these you'll get to practice and improve your robot to be one step closer to winning the two day finals event! </p>
                     <p>The competition is a great way to meet other students that are as passionate about robotics as you are.</p>
-                    <p>Dates for Regionals (one-day event):<br>
+                    <p>Competition dates 2026:<br>
 
-    Edinburgh: Saturday 28 February 2026 at Heriot-Watt University.<br>
-    Cambridge: Saturday 21 March 2026 at University of Cambridge.<br>
-</p>
+                        Edinburgh: Saturday 28 February 2026 at Heriot-Watt University.<br>
+                        Cambridge: Saturday 21 March 2026 at University of Cambridge.<br>
+                        London: Saturday 27 and Sunday 28 June 2026 at Queen Mary University of London and University College London! <br>
+                    </p>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@ title: Home
     <div class="section">
         <div id="info-buttons" class="button-row">
             <a href="https://linkly.link/2Firr" class="button intro doc">2026 RULEBOOK</a>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEvT1Q8A_u6wGSomogfAurt6BKIho082s9yv_fDwZlbdy3TQ/viewform" class="button rulebook">2026 SIGN UPS</a>
+            <a href="" class="button rulebook">2026 SIGN UPS CLOSED</a>
         </div>
         <div id="info-buttons" class="button-row">
             <a href="https://www.instagram.com/unibots_uk/" class="button signup">INSTAGRAM</a>
