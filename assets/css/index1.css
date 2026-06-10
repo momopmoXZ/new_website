@@ -44,6 +44,17 @@ body {
     background-color: #f8f9fa;
 }
 
+.nav-link--signup {
+    background-color: #009fff;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.nav-link--signup:hover {
+    background-color: #007fca;
+    color: #ffffff;
+}
+
 /* Hamburger menu */
 
 .menu-toggle {

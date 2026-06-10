@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Take Part
+permalink: /sign-up/
 ---
 
 <main class="take-part">
@@ -175,6 +176,14 @@ title: Take Part
 			</article>
 		</div>
 
+		<div class="take-finals-weekend">
+			<strong>Finals weekend is more than the competition.</strong>
+			<p>
+				Alongside practice matches and a full day of head-to-head competition, teams can take
+				part in networking, flash talks including sponsor talks, and a robotics-themed team activity.
+			</p>
+		</div>
+
 		<div class="take-event-note">
 			<strong>Good to know:</strong>
 			<span>
@@ -293,7 +302,7 @@ title: Take Part
 		<div class="take-heading">
 			<div>
 				<p class="take-label">Team registration</p>
-				<h2>Sign your team up</h2>
+				<h2>Ready to begin?</h2>
 			</div>
 			<p>
 				Complete the form below to register when sign-ups are open. If Google Forms does not
@@ -311,20 +320,9 @@ title: Take Part
 			Having trouble with the embedded form?
 			<a href="https://forms.gle/bN6ppCkbnKufAKhE9" target="_blank" rel="noopener">Open it in a new tab &rarr;</a>
 		</p>
-	</section>
-
-	<section class="take-signup" id="signup">
-		<div>
-			<p class="take-label">Ready to begin?</p>
-			<h2>Get your team into the next Unibots season</h2>
-			<p>
-				Current season registrations are closed, but you can contact the organisers now and
-				join Discord to hear when the next team signup opens.
-			</p>
-		</div>
-		<div class="take-signup__actions">
-			<a class="take-button take-button--primary take-button--large" href="#registration">View signup form</a>
-			<a class="take-button take-button--outline" href="https://discord.gg/N2xYcKAT5a" target="_blank" rel="noopener">Ask questions on Discord</a>
+		<div class="take-registration__actions">
+			<a class="take-button take-button--dark take-button--large" href="mailto:unibots.uk.comp@gmail.com">Contact us</a>
+			<a class="take-button take-button--discord take-button--large" href="https://discord.gg/N2xYcKAT5a" target="_blank" rel="noopener">Ask questions on Discord</a>
 		</div>
 	</section>
 </main>
@@ -408,7 +406,7 @@ title: Take Part
 		font-size: 0.76rem;
 	}
 
-	.take-actions, .take-signup__actions{
+	.take-actions{
 		display: flex;
 		flex-wrap: wrap;
 		gap: 0.75rem;
@@ -431,6 +429,8 @@ title: Take Part
 	.take-button--primary{ background: var(--take-orange); color: var(--take-ink); }
 	.take-button--outline{ border-color: rgba(255,255,255,0.72); color: #fff; }
 	.take-button--light{ background: #fff; color: var(--take-ink); }
+	.take-button--dark{ background: var(--take-ink); color: #fff; }
+	.take-button--discord{ background: #5865f2; color: #fff; }
 
 	.take-jump-links{
 		position: sticky;
@@ -471,7 +471,7 @@ title: Take Part
 		margin-bottom: 1.6rem;
 	}
 
-	.take-heading h2, .take-feature h2, .take-signup h2{
+	.take-heading h2, .take-feature h2{
 		margin-bottom: 0;
 		font-size: clamp(1.9rem, 4vw, 2.8rem);
 		line-height: 1.08;
@@ -557,6 +557,25 @@ title: Take Part
 	.take-event-grid article > p:not(.take-event__type, .take-event__date){ min-height: 76px; font-size: 0.82rem; }
 	.take-event-grid span{ color: var(--take-blue); font-size: 0.7rem; font-weight: 850; text-transform: uppercase; }
 
+	.take-finals-weekend{
+		margin-top: 1rem;
+		padding: 1.1rem 1.2rem;
+		border-radius: 9px;
+		background: var(--take-ink);
+	}
+
+	.take-finals-weekend strong{
+		display: block;
+		margin-bottom: 0.35rem;
+		color: #fff;
+	}
+
+	.take-finals-weekend p{
+		margin-bottom: 0;
+		color: rgba(255,255,255,0.75);
+		font-size: 0.82rem;
+	}
+
 	.take-event-note{
 		display: grid;
 		grid-template-columns: auto 1fr auto;
@@ -611,7 +630,7 @@ title: Take Part
 
 	.take-form-frame iframe{
 		width: 100%;
-		height: 1050px;
+		height: clamp(420px, 68vh, 680px);
 		display: block;
 		border: 0;
 	}
@@ -627,20 +646,12 @@ title: Take Part
 		font-weight: 800;
 	}
 
-	.take-signup{
+	.take-registration__actions{
 		display: grid;
-		grid-template-columns: 1fr auto;
-		gap: 2rem;
-		align-items: center;
-		padding: clamp(1.5rem, 4vw, 3rem);
-		border-radius: 12px;
-		background: var(--take-ink);
-		scroll-margin-top: 160px;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.75rem;
+		margin-top: 1.5rem;
 	}
-
-	.take-signup h2{ margin-bottom: 0.8rem; color: #fff; }
-	.take-signup p:not(.take-label){ max-width: 690px; margin-bottom: 0; color: rgba(255,255,255,0.72); font-size: 0.88rem; }
-	.take-signup__actions{ flex-direction: column; min-width: 245px; }
 
 	@media (max-width: 900px){
 		.take-facts, .take-award-grid{ grid-template-columns: 1fr 1fr; }
@@ -648,15 +659,15 @@ title: Take Part
 		.take-feature__image{ min-height: 340px; }
 		.take-event-grid{ grid-template-columns: 1fr; }
 		.take-event-grid article > p:not(.take-event__type, .take-event__date){ min-height: 0; }
-		.take-event-note, .take-signup{ grid-template-columns: 1fr; }
+		.take-event-note{ grid-template-columns: 1fr; }
 	}
 
 	@media (max-width: 650px){
 		.take-part{ padding: 0 0 2rem; }
-		.take-hero, .take-feature, .take-awards, .take-registration, .take-signup{ border-radius: 0; }
+		.take-hero, .take-feature, .take-awards, .take-registration{ border-radius: 0; }
 		.take-hero{ min-height: 680px; }
 		.take-hero::after{ background: linear-gradient(0deg, rgba(16,25,38,0.98), rgba(16,25,38,0.5) 75%, rgba(16,25,38,0.15)); }
-		.take-actions, .take-signup__actions{ flex-direction: column; }
+		.take-actions{ flex-direction: column; }
 		.take-jump-links{ position: static; justify-content: flex-start; overflow-x: auto; margin: -1rem 1rem 3rem; white-space: nowrap; }
 		.take-section{ padding-right: 1rem; padding-left: 1rem; }
 		.take-heading{ grid-template-columns: 1fr; gap: 0.5rem; }
@@ -664,6 +675,7 @@ title: Take Part
 		.take-step-list article{ grid-template-columns: 42px 1fr; padding: 1rem; }
 		.take-feature__image{ min-height: 260px; }
 		.take-event-note{ align-items: start; }
-		.take-form-frame iframe{ height: 1200px; }
+		.take-registration__actions{ grid-template-columns: 1fr; }
+		.take-form-frame iframe{ height: clamp(380px, 62vh, 560px); }
 	}
 </style>

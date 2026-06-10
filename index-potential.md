@@ -93,7 +93,7 @@ title: Unibots UK
 			<p class="home-kicker">The competition</p>
 			<h2>Approachable to start. Open-ended enough to surprise.</h2>
 			<p>
-				Unibots is designed for students with little robotics experience, while leaving
+				Unibots is designed for students with any level of robotics experience, leaving
 				plenty of room for creative and ambitious engineering.
 			</p>
 			<ul>
@@ -102,7 +102,7 @@ title: Unibots UK
 				<li>Balance mechanical design, electronics, software, and match strategy</li>
 				<li>Learn from other teams and improve between events</li>
 			</ul>
-			<a class="home-text-link" href="{{ '/FAQs' | relative_url }}">Read the competition FAQs &rarr;</a>
+			<a class="home-text-link" href="{{ '/sign-up/' | relative_url }}">Find out how to take part &rarr;</a>
 		</div>
 	</section>
 
@@ -136,7 +136,7 @@ title: Unibots UK
 		</div>
 		<div class="home-coming-soon">
 			<strong>Thinking about entering next season?</strong>
-			<span>Our new start-a-team guide is coming soon. Join the Discord for advice and season announcements.</span>
+			<span>Read the <a href="{{ '/sign-up/' | relative_url }}">take part guide</a> or join Discord for advice and season announcements.</span>
 		</div>
 	</section>
 
@@ -655,6 +655,12 @@ title: Unibots UK
 
 	.home-coming-soon span{
 		color: var(--home-muted);
+	}
+
+	.home-coming-soon a{
+		color: var(--home-ink);
+		font-weight: 800;
+		text-decoration-color: var(--home-blue);
 	}
 
 	.home-sponsors{
