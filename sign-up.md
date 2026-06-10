@@ -40,7 +40,7 @@ permalink: /sign-up/
 			</div>
 			<p>
 				Unibots is designed to give students a friendly route into practical robotics.
-				Teams can start with little experience and choose how ambitious to make their solution.
+				Teams can start with any level of experience and choose how ambitious to make their solution.
 			</p>
 		</div>
 
