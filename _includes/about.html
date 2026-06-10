@@ -18,8 +18,8 @@
 	<section class="about-section about-intro">
 		<p class="about-section-label">What is Unibots?</p>
 		<h2>A national challenge with a friendly starting line</h2>
-		<p class="about-lead">
-			Founded in 2022 by students from the University of Cambridge and King's College London,
+		<p>
+			Founded in 2022 by students from the University of Cambridge and the University of Southampton,
 			Unibots gives university teams a reason to design, build, test, and improve an autonomous
 			robot together.
 		</p>
@@ -74,6 +74,21 @@
 					<li>Meet robotics students from universities across the country</li>
 					<li>See different approaches to the same engineering challenge</li>
 				</ul>
+				<div class="about-participant-journey" aria-label="Participant competition journey">
+					<p class="about-participant-journey__title">Your competition journey</p>
+					<div>
+						<strong>Design and build</strong>
+						<span>Turn your team's approach into a working autonomous robot.</span>
+					</div>
+					<div>
+						<strong>Test at regionals</strong>
+						<span>Try the arena, meet other teams, and improve your robot.</span>
+					</div>
+					<div>
+						<strong>Compete at finals</strong>
+						<span>Join a weekend of networking, talks, practice, and competition.</span>
+					</div>
+				</div>
 				<a href="{{ '/sign-up/' | relative_url }}">Find out how to take part &rarr;</a>
 			</article>
 
@@ -86,33 +101,23 @@
 					<li>Share expertise through talks, judging, booths, or volunteering</li>
 					<li>Help fund arenas, materials, prizes, and national events</li>
 				</ul>
+				<div class="about-partner-support" aria-label="Ways sponsors can support Unibots">
+					<p class="about-partner-support__title">Ways to support Unibots</p>
+					<div>
+						<strong>Fund the competition</strong>
+						<span>Help cover arenas, venues, materials, prizes, and accessible events.</span>
+					</div>
+					<div>
+						<strong>Share your expertise</strong>
+						<span>Give talks, judge awards, mentor teams, or offer technical insight.</span>
+					</div>
+					<div>
+						<strong>Join us at events</strong>
+						<span>Meet students through booths, volunteering, and direct participation.</span>
+					</div>
+				</div>
 				<a href="{{ '/support_us' | relative_url }}">See ways to support us &rarr;</a>
 			</article>
-		</div>
-	</section>
-
-	<section class="about-section">
-		<p class="about-section-label">The competition journey</p>
-		<h2>From first idea to finals weekend</h2>
-		<p>
-			Teams have time to develop their robot before meeting at regional events and the two-day
-			finals. Regionals are opportunities to practise in the arena, learn from other teams, and
-			improve before the main competition.
-		</p>
-
-		<div class="about-journey" aria-label="Competition journey">
-			<div class="about-journey-step">
-				<strong>Design and build</strong>
-				<span>Form a team, interpret the challenge, and turn your approach into a working autonomous robot.</span>
-			</div>
-			<div class="about-journey-step">
-				<strong>Test at regionals</strong>
-				<span>Try the arena, meet other teams, and take useful lessons back to your workshop.</span>
-			</div>
-			<div class="about-journey-step">
-				<strong>Compete at finals</strong>
-				<span>Join a weekend of networking, talks, practice, and head-to-head competition.</span>
-			</div>
 		</div>
 	</section>
 
@@ -388,35 +393,66 @@
 			text-decoration-color: var(--about-blue);
 		}
 
-		.about-journey{
+		.about-participant-journey,
+		.about-partner-support{
 			display: grid;
 			gap: 0;
-			margin-top: 1.5rem;
+			margin: 1.2rem 0;
 			border: 1px solid rgba(24,33,47,0.1);
-			border-radius: 8px;
+			border-radius: 7px;
 			overflow: hidden;
+			background: var(--about-soft-blue);
 		}
 
-		.about-journey-step{
-			display: grid;
-			grid-template-columns: minmax(145px, 0.7fr) 2fr;
-			gap: 1rem;
-			padding: 1rem 1.2rem;
+		.about-participant-journey__title,
+		.about-partner-support__title{
+			margin: 0 !important;
+			padding: 0.65rem 0.8rem;
+			color: var(--about-blue) !important;
+			font-size: 0.7rem;
+			font-weight: 800;
+			letter-spacing: 0.09em;
+			text-transform: uppercase;
+		}
+
+		.about-participant-journey div,
+		.about-partner-support div{
+			padding: 0.75rem 0.8rem;
 			background: #fff;
 		}
 
-		.about-journey-step + .about-journey-step{
+		.about-participant-journey div + div,
+		.about-partner-support div + div{
 			border-top: 1px solid rgba(24,33,47,0.1);
 		}
 
-		.about-journey-step strong{
-			color: var(--about-ink);
+		.about-participant-journey strong,
+		.about-participant-journey span,
+		.about-partner-support strong,
+		.about-partner-support span{
+			display: block;
 		}
 
-		.about-journey-step span{
+		.about-participant-journey strong,
+		.about-partner-support strong{
+			color: var(--about-ink);
+			font-size: 0.83rem;
+		}
+
+		.about-participant-journey span,
+		.about-partner-support span{
+			margin-top: 0.15rem;
 			color: var(--about-muted);
-			font-size: 0.95rem;
-			line-height: 1.5;
+			font-size: 0.74rem;
+			line-height: 1.4;
+		}
+
+		.about-partner-support{
+			background: var(--about-soft-orange);
+		}
+
+		.about-partner-support__title{
+			color: var(--about-orange) !important;
 		}
 
 		.about-event-type{
@@ -521,11 +557,6 @@
 			.about-photo-pair{
 				margin-right: 0;
 				margin-left: 0;
-			}
-
-			.about-journey-step{
-				grid-template-columns: 1fr;
-				gap: 0.35rem;
 			}
 
 			.about-host-logos{

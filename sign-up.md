@@ -68,8 +68,12 @@ permalink: /sign-up/
 		<div class="take-heading">
 			<div>
 				<p class="take-label">Start a team</p>
-				<h2>Four steps from idea to arena</h2>
+				<h2>From a first sketch to the finals arena</h2>
 			</div>
+			<p>
+				Teams own the full process. There is no single correct solution, and every match gives
+				you something new to take back to the build table.
+			</p>
 		</div>
 
 		<div class="take-step-list">

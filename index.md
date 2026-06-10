@@ -43,8 +43,8 @@ title: Unibots UK
 			<span>robots built by students</span>
 		</div>
 		<div>
-			<strong>27-28 June</strong>
-			<span>two-day London finals</span>
+			<strong>Free to enter</strong>
+			<span>no team registration fee</span>
 		</div>
 	</section>
 
@@ -103,40 +103,6 @@ title: Unibots UK
 				<li>Learn from other teams and improve between events</li>
 			</ul>
 			<a class="home-text-link" href="{{ '/sign-up/' | relative_url }}">Find out how to take part &rarr;</a>
-		</div>
-	</section>
-
-	<section class="home-section home-journey">
-		<div class="home-section__heading">
-			<div>
-				<p class="home-kicker">How it works</p>
-				<h2>From a first sketch to the finals arena</h2>
-			</div>
-			<p>
-				Teams own the full process. There is no single correct solution, and every match gives
-				you something new to take back to the build table.
-			</p>
-		</div>
-		<div class="home-step-grid">
-			<article>
-				<span>01</span>
-				<h3>Form a team</h3>
-				<p>Bring together friends, coursemates, or a university society and choose your approach.</p>
-			</article>
-			<article>
-				<span>02</span>
-				<h3>Design and build</h3>
-				<p>Turn your strategy into a robot that can sense, decide, move, and score on its own.</p>
-			</article>
-			<article>
-				<span>03</span>
-				<h3>Test and compete</h3>
-				<p>Meet teams from across the UK, learn in the arena, and see how your ideas perform.</p>
-			</article>
-		</div>
-		<div class="home-coming-soon">
-			<strong>Thinking about entering next season?</strong>
-			<span>Read the <a href="{{ '/sign-up/' | relative_url }}">take part guide</a> or join Discord for advice and season announcements.</span>
 		</div>
 	</section>
 
@@ -491,8 +457,7 @@ title: Unibots UK
 		font-size: 0.95rem;
 	}
 
-	.home-event-grid,
-	.home-step-grid{
+	.home-event-grid{
 		display: grid;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 		gap: 16px;
@@ -604,61 +569,6 @@ title: Unibots UK
 	.home-text-link{
 		color: #fff;
 		font-size: 0.9rem;
-		font-weight: 800;
-		text-decoration-color: var(--home-blue);
-	}
-
-	.home-step-grid article{
-		padding: 1.35rem;
-		border-radius: 9px;
-		background: var(--home-soft-blue);
-	}
-
-	.home-step-grid article:nth-child(2){
-		background: #f5f7fa;
-	}
-
-	.home-step-grid article:nth-child(3){
-		background: var(--home-soft-orange);
-	}
-
-	.home-step-grid span{
-		color: var(--home-blue);
-		font-size: 0.76rem;
-		font-weight: 850;
-	}
-
-	.home-step-grid h3{
-		margin: 1rem 0 0.5rem;
-		font-size: 1.15rem;
-	}
-
-	.home-step-grid p{
-		margin-bottom: 0;
-		font-size: 0.88rem;
-	}
-
-	.home-coming-soon{
-		display: flex;
-		gap: 0.75rem;
-		margin-top: 1rem;
-		padding: 1rem 1.2rem;
-		border-left: 4px solid var(--home-orange);
-		background: #fff;
-		box-shadow: 0 8px 20px rgba(24,33,47,0.06);
-		font-size: 0.88rem;
-	}
-
-	.home-coming-soon strong{
-		flex: 0 0 auto;
-	}
-
-	.home-coming-soon span{
-		color: var(--home-muted);
-	}
-
-	.home-coming-soon a{
-		color: var(--home-ink);
 		font-weight: 800;
 		text-decoration-color: var(--home-blue);
 	}
@@ -790,8 +700,7 @@ title: Unibots UK
 	}
 
 	@media (max-width: 900px){
-		.home-event-grid,
-		.home-step-grid{
+		.home-event-grid{
 			grid-template-columns: 1fr;
 		}
 
@@ -833,7 +742,6 @@ title: Unibots UK
 		}
 
 		.home-actions,
-		.home-coming-soon,
 		.home-sponsors__footer{
 			flex-direction: column;
 			align-items: stretch;
