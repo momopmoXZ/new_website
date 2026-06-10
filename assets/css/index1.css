@@ -119,7 +119,7 @@ body {
 /* Blog and About Page Styles */
 .blog-container,
 .about-container {
-    max-width: 800px;
+    max-width: 1180px;
     margin: 2rem auto;
     padding: 0 2rem;
 }

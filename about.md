@@ -3,5 +3,6 @@ layout: default
 title: About
 ---
 
-{% include about.html %}
-
+<div class="about-container">
+    {% include about.html %}
+</div>

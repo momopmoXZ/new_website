@@ -3,4 +3,6 @@ layout: default
 title: Support us
 ---
 
-{% include support_us.html %}
+<div class="about-container">
+    {% include support_us.html %}
+</div>
