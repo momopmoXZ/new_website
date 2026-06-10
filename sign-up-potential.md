@@ -14,8 +14,8 @@ title: Take Part
 				to the test against university teams from across the UK.
 			</p>
 			<div class="take-actions">
-				<a class="take-button take-button--primary take-button--large" href="mailto:unibots.uk.comp@gmail.com?subject=Unibots%20team%20sign-up">Sign your team up</a>
-				<a class="take-button take-button--outline" href="https://linkly.link/2Firr" target="_blank" rel="noopener">Read the 2026 rules</a>
+				<a class="take-button take-button--primary take-button--large" href="mailto:unibots.uk.comp@gmail.com?subject=Unibots%20team%20sign-up">Sign ups are currently closed</a>
+				<a class="take-button take-button--outline take-button--large" href="https://linkly.link/2Firr" target="_blank" rel="noopener">Read the 2026 rules</a>
 			</div>
 			<p class="take-hero__note">
 				2025-2026 season sign-ups are closed. Get in touch to hear about the next season.
@@ -38,7 +38,7 @@ title: Take Part
 			</div>
 			<p>
 				Unibots is designed to give students a friendly route into practical robotics.
-				Teams can start with elementary experience and choose how ambitious to make their solution.
+				Teams can start with little experience and choose how ambitious to make their solution.
 			</p>
 		</div>
 
@@ -146,7 +146,7 @@ title: Take Part
 			</div>
 			<p>
 				Regionals let teams try the arena and improve their robots before the two-day finals.
-				Regionals do not determine qualification, and teams may attend both.
+				Regionals do not determine qualification, and teams may attend multiple.
 			</p>
 		</div>
 
@@ -241,8 +241,8 @@ title: Take Part
 			<p>No. Teams cover their own travel and accommodation, but the organisers can provide evidence to support a university funding request. Email <a href="mailto:unibots.uk.comp@gmail.com">unibots.uk.comp@gmail.com</a>.</p>
 		</details>
 		<details>
-			<summary>Can we attend both regional events?</summary>
-			<p>Yes. Teams may attend both regionals, but travel costs are not sponsored.</p>
+			<summary>Can we attend multiple regional events?</summary>
+			<p>Yes. Teams may attend multiple regionals, but travel costs are not sponsored.</p>
 		</details>
 		<details>
 			<summary>Does our robot need to be finished for a regional?</summary>
@@ -264,7 +264,7 @@ title: Take Part
 		</details>
 		<details>
 			<summary>Can the robot connect to a laptop or external device?</summary>
-			<p>No. All processing, including computer vision and action prediction, must happen within the robot. A Raspberry Pi, NVIDIA Jetson, other single-board computer, or phone contained within the robot may be used, but it must not use internet-based processing.</p>
+			<p>No. All processing, including computer vision and action prediction, must happen within the robot during a match. A Raspberry Pi, NVIDIA Jetson, other single-board computer, or phone contained within the robot may be used, but it must not use internet-based processing. During robot safety inspections, we will be asking questions for this, and during the finals teams will not be allowed to compete unless the judges are satisfied that the robot is doing all its own processing.</p>
 		</details>
 		<details>
 			<summary>Are ball bearings inside the robot scored?</summary>
@@ -272,11 +272,19 @@ title: Take Part
 		</details>
 		<details>
 			<summary>What happens when robots collide?</summary>
-			<p>If robots remain in contact for three seconds, the referees begin a ten-second reset. Field resetters return the robots to their teams, who may place them back in their starting zones once the reset finishes. Balls physically attached to or contained within the robot remain with it.</p>
+			<p>All robots that are colliding are reset as previous years, however, this year, if the balls are contained within or physically attached the robot (such that when the robot is picked up, the balls come with it) the balls will be kept within the robot (see rule 1.11.2). <br> 
+				The process for a reset happens like so: <br> </p>
+			<ul>
+				<li>Two (or more) robots collide</li>
+				<li>If the robots are in contact for 3 seconds (assessed by the referees), the scoring system plays a buzzer noise</li>
+				<li>A 10 second reset timer begins</li>
+				<li>The robots are picked up by the <b>field resetters</b>, and handed back to the teams</li>
+				<li>The teams wait until the 10 second reset timer is complete, the scoring system will play another buzzer, then can place their robot back into the arena in their starting zone (the team can press their physical start button again as per rule 1.11.3)</li>
+			</ul>
 		</details>
 		<details>
 			<summary>What if our robot is larger than the size limit?</summary>
-			<p>Finals inspections use exact 200 x 200 x 200mm and 300 x 300 x 300mm sizing tools. Robots that do not fit cannot compete for prizes. Regionals may allow robots that are only slightly over-size so teams can still practise.</p>
+			<p>Finals inspections use exact 200 x 200 x 200mm and 300 x 300 x 300mm sizing tools. Robots that do not fit cannot compete for prizes. Regionals may allow robots that are only slightly over-size (by 20-30mm) so teams can still practise.</p>
 		</details>
 	</section>
 
@@ -290,7 +298,7 @@ title: Take Part
 			</p>
 		</div>
 		<div class="take-signup__actions">
-			<a class="take-button take-button--primary take-button--large" href="mailto:unibots.uk.comp@gmail.com?subject=Unibots%20team%20sign-up">Sign your team up</a>
+			<a class="take-button take-button--primary take-button--large" href="mailto:unibots.uk.comp@gmail.com?subject=Unibots%20team%20sign-up">Keep me up to date</a>
 			<a class="take-button take-button--outline" href="https://discord.gg/N2xYcKAT5a" target="_blank" rel="noopener">Ask questions on Discord</a>
 		</div>
 	</section>
