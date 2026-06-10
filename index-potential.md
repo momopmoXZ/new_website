@@ -5,7 +5,7 @@ title: Unibots UK
 
 <main class="home-potential">
 	<section class="home-hero">
-		<img src="{{ '/assets/images/P1015887.JPG' | relative_url }}" alt="Students gathered around the Unibots competition arena">
+		<img src="{{ '/assets/images/DSC_2716-min.jpg' | relative_url }}" alt="Students gathered around the Unibots competition arena">
 		<div class="home-hero__shade"></div>
 		<div class="home-hero__content">
 			<div class="home-hero__brand">
@@ -13,7 +13,7 @@ title: Unibots UK
 				<span>Unibots UK</span>
 			</div>
 			<p class="home-kicker">The 2026 season is underway</p>
-			<h1>Build an autonomous robot. Put it to the test.</h1>
+			<h1>Challenging students to create simple machines.</h1>
 			<p class="home-hero__intro">
 				A student-led robotics competition bringing university teams together to design,
 				build, improve, and compete across the UK.
@@ -21,6 +21,14 @@ title: Unibots UK
 			<div class="home-actions">
 				<a class="home-button home-button--light" href="{{ '/about' | relative_url }}">Discover Unibots</a>
 				<a class="home-button home-button--outline" href="https://discord.gg/N2xYcKAT5a" target="_blank" rel="noopener">Join our Discord</a>
+			</div>
+			<div class="home-organisers">
+				<p>Organised by</p>
+				<div class="home-organisers__logos" aria-label="Unibots organising societies">
+					<img src="{{ '/assets/images/CURLOGO_TEXT.svg' | relative_url }}" alt="Cambridge University Robotics">
+					<img src="{{ '/assets/images/hwu_combined_new_logo.png' | relative_url }}" alt="Heriot-Watt University Robotics Society">
+					<img src="{{ '/assets/images/QMES_Logo.png' | relative_url }}" alt="Queen Mary Electronics Society">
+				</div>
 			</div>
 		</div>
 	</section>
@@ -79,18 +87,18 @@ title: Unibots UK
 
 	<section class="home-feature">
 		<div class="home-feature__image">
-			<img src="{{ '/assets/images/DSC_2716-min.jpg' | relative_url }}" alt="Autonomous robots competing in the Unibots arena" loading="lazy">
+			<img src="{{ '/assets/images/future_advertising/P1015941.JPG' | relative_url }}" alt="Autonomous robots competing in the Unibots arena" loading="lazy">
 		</div>
 		<div class="home-feature__content">
 			<p class="home-kicker">The competition</p>
 			<h2>Approachable to start. Open-ended enough to surprise.</h2>
 			<p>
-				Unibots is designed for students with elementary robotics experience, while leaving
+				Unibots is designed for students with little robotics experience, while leaving
 				plenty of room for creative and ambitious engineering.
 			</p>
 			<ul>
 				<li>Build a compact, fully autonomous robot as a team</li>
-				<li>Collect ping pong balls and steel ball bearings in head-to-head matches</li>
+				<li>Collect ping pong balls and steel ball bearings in head-to-head-to-head-to-head matches</li>
 				<li>Balance mechanical design, electronics, software, and match strategy</li>
 				<li>Learn from other teams and improve between events</li>
 			</ul>
@@ -143,19 +151,57 @@ title: Unibots UK
 				accessible national competition possible.
 			</p>
 		</div>
-		<div class="home-sponsor-grid">
-			<a href="https://thenationalrobotarium.com/" target="_blank" rel="noopener">
+		<div class="home-sponsor-grid" role="tablist" aria-label="Our 2026 supporters">
+			<button class="home-sponsor-logo is-active" type="button" role="tab" aria-selected="true" aria-controls="sponsor-national-robotarium" data-sponsor="sponsor-national-robotarium">
 				<img src="{{ '/assets/images/NR_Logo.png' | relative_url }}" alt="National Robotarium">
-			</a>
-			<a href="https://www.ukesf.org/" target="_blank" rel="noopener">
+			</button>
+			<button class="home-sponsor-logo" type="button" role="tab" aria-selected="false" aria-controls="sponsor-ukesf" data-sponsor="sponsor-ukesf">
 				<img src="{{ '/assets/images/UKESF-Logo.png' | relative_url }}" alt="UK Electronics Skills Foundation">
-			</a>
-			<a href="https://ooznest.co.uk/" target="_blank" rel="noopener">
+			</button>
+			<button class="home-sponsor-logo" type="button" role="tab" aria-selected="false" aria-controls="sponsor-ooznest" data-sponsor="sponsor-ooznest">
 				<img src="{{ '/assets/images/ooznest_logo.png' | relative_url }}" alt="Ooznest">
-			</a>
-			<a href="https://www.autodesk.com/uk" target="_blank" rel="noopener">
+			</button>
+			<button class="home-sponsor-logo" type="button" role="tab" aria-selected="false" aria-controls="sponsor-autodesk" data-sponsor="sponsor-autodesk">
 				<img src="{{ '/assets/images/Autodesk.png' | relative_url }}" alt="Autodesk">
-			</a>
+			</button>
+		</div>
+		<div class="home-sponsor-details">
+			<article class="home-sponsor-detail is-active" id="sponsor-national-robotarium" role="tabpanel">
+				<h3>The National Robotarium</h3>
+				<p>
+					A global research institute at Heriot-Watt University, creating innovative solutions
+					to global challenges and helping move pioneering robotic, AI, and automated technologies
+					from lab to market.
+				</p>
+				<a href="https://thenationalrobotarium.com/" target="_blank" rel="noopener">Visit The National Robotarium &rarr;</a>
+			</article>
+			<article class="home-sponsor-detail" id="sponsor-ukesf" role="tabpanel" hidden>
+				<h3>UK Electronics Skills Foundation</h3>
+				<p>
+					The voice for skills in the UK electronics industry. Through engagement with schools,
+					universities, and industry, UKESF encourages more young people to study electronics and
+					pursue careers in the sector.
+				</p>
+				<a href="https://www.ukesf.org/" target="_blank" rel="noopener">Visit UKESF &rarr;</a>
+			</article>
+			<article class="home-sponsor-detail" id="sponsor-ooznest" role="tabpanel" hidden>
+				<h3>Ooznest</h3>
+				<p>
+					Ooznest empowers makers to bring ideas to life with mechanical project components,
+					from aluminium extrusion systems to application-specific kits. Ooznest proudly sponsors
+					the Unibots UK 2026 arena.
+				</p>
+				<a href="https://ooznest.co.uk/" target="_blank" rel="noopener">Visit Ooznest &rarr;</a>
+			</article>
+			<article class="home-sponsor-detail" id="sponsor-autodesk" role="tabpanel" hidden>
+				<h3>Autodesk</h3>
+				<p>
+					Autodesk is changing how the world is designed and made. From the buildings we live in
+					to the products we use and the movies that inspire us, Autodesk software helps its
+					customers design and make a better world.
+				</p>
+				<a href="https://www.autodesk.com/uk" target="_blank" rel="noopener">Visit Autodesk &rarr;</a>
+			</article>
 		</div>
 		<div class="home-sponsors__footer">
 			<p>Interested in backing practical, student-led robotics?</p>
@@ -164,7 +210,7 @@ title: Unibots UK
 	</section>
 
 	<section class="home-community">
-		<img src="{{ '/assets/images/DSC_2866-min.jpg' | relative_url }}" alt="Students celebrating at a Unibots event" loading="lazy">
+		<img src="{{ '/assets/images/P1016043.JPG' | relative_url }}" alt="Students celebrating at a Unibots event" loading="lazy">
 		<div class="home-community__content">
 			<p class="home-kicker">Keep up with Unibots</p>
 			<h2>Follow the builds. Meet the community.</h2>
@@ -179,6 +225,33 @@ title: Unibots UK
 		</div>
 	</section>
 </main>
+
+<script>
+	document.querySelectorAll(".home-sponsors").forEach((sponsorSection) => {
+		const sponsorButtons = sponsorSection.querySelectorAll("[data-sponsor]");
+		const sponsorDetails = sponsorSection.querySelectorAll(".home-sponsor-detail");
+
+		const showSponsor = (sponsorId) => {
+			sponsorButtons.forEach((button) => {
+				const isActive = button.dataset.sponsor === sponsorId;
+				button.classList.toggle("is-active", isActive);
+				button.setAttribute("aria-selected", isActive);
+			});
+
+			sponsorDetails.forEach((detail) => {
+				const isActive = detail.id === sponsorId;
+				detail.classList.toggle("is-active", isActive);
+				detail.hidden = !isActive;
+			});
+		};
+
+		sponsorButtons.forEach((button) => {
+			button.addEventListener("mouseenter", () => showSponsor(button.dataset.sponsor));
+			button.addEventListener("focus", () => showSponsor(button.dataset.sponsor));
+			button.addEventListener("click", () => showSponsor(button.dataset.sponsor));
+		});
+	});
+</script>
 
 <style>
 	.home-potential{
@@ -283,6 +356,38 @@ title: Unibots UK
 		margin-bottom: 1.5rem;
 		color: rgba(255,255,255,0.84) !important;
 		font-size: 1.08rem;
+	}
+
+	.home-organisers{
+		max-width: 620px;
+		margin-top: 2rem;
+		padding: 0.8rem 1rem 0.9rem;
+		border: 1px solid rgba(255,255,255,0.25);
+		border-radius: 9px;
+		background: rgba(255,255,255,0.91);
+		backdrop-filter: blur(8px);
+	}
+
+	.home-organisers p{
+		margin-bottom: 0.65rem;
+		color: var(--home-ink) !important;
+		font-size: 0.66rem;
+		font-weight: 850;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	.home-organisers__logos{
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		align-items: center;
+		gap: 1.25rem;
+	}
+
+	.home-organisers__logos img{
+		width: 100%;
+		max-height: 42px;
+		object-fit: contain;
 	}
 
 	.home-actions{
@@ -566,7 +671,7 @@ title: Unibots UK
 		margin: 2rem 0;
 	}
 
-	.home-sponsor-grid a{
+	.home-sponsor-logo{
 		min-height: 145px;
 		display: flex;
 		align-items: center;
@@ -576,18 +681,51 @@ title: Unibots UK
 		border-radius: 9px;
 		background: #fff;
 		box-shadow: 0 10px 25px rgba(24,33,47,0.07);
-		transition: transform 0.15s ease, box-shadow 0.15s ease;
+		cursor: pointer;
+		font: inherit;
+		transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 	}
 
-	.home-sponsor-grid a:hover{
+	.home-sponsor-logo:hover,
+	.home-sponsor-logo:focus-visible,
+	.home-sponsor-logo.is-active{
 		transform: translateY(-3px);
+		border-color: var(--home-blue);
 		box-shadow: 0 14px 28px rgba(24,33,47,0.12);
+		outline: none;
 	}
 
 	.home-sponsor-grid img{
 		width: 100%;
 		max-height: 80px;
 		object-fit: contain;
+	}
+
+	.home-sponsor-details{
+		min-height: 205px;
+		margin-bottom: 2rem;
+		padding: 1.4rem 1.5rem;
+		border-left: 5px solid var(--home-blue);
+		border-radius: 9px;
+		background: #fff;
+		box-shadow: 0 10px 25px rgba(24,33,47,0.07);
+	}
+
+	.home-sponsor-detail h3{
+		margin-bottom: 0.55rem;
+		font-size: 1.15rem;
+	}
+
+	.home-sponsor-detail p{
+		margin-bottom: 0.75rem;
+		font-size: 0.9rem;
+	}
+
+	.home-sponsor-detail a{
+		color: var(--home-ink);
+		font-size: 0.85rem;
+		font-weight: 800;
+		text-decoration-color: var(--home-blue);
 	}
 
 	.home-sponsors__footer{
@@ -677,7 +815,7 @@ title: Unibots UK
 		}
 
 		.home-hero{
-			min-height: 650px;
+			min-height: 760px;
 		}
 
 		.home-hero__shade{
@@ -728,9 +866,27 @@ title: Unibots UK
 			gap: 8px;
 		}
 
-		.home-sponsor-grid a{
+		.home-sponsor-logo{
 			min-height: 110px;
 			padding: 0.75rem;
+		}
+
+		.home-sponsor-details{
+			min-height: 285px;
+			margin-bottom: 1.5rem;
+			padding: 1.1rem;
+		}
+
+		.home-organisers{
+			margin-top: 1.5rem;
+		}
+
+		.home-organisers__logos{
+			gap: 0.65rem;
+		}
+
+		.home-organisers__logos img{
+			max-height: 34px;
 		}
 	}
 </style>
