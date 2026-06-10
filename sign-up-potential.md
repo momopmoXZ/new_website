@@ -14,7 +14,7 @@ title: Take Part
 				to the test against university teams from across the UK.
 			</p>
 			<div class="take-actions">
-				<a class="take-button take-button--primary take-button--large" href="mailto:unibots.uk.comp@gmail.com?subject=Unibots%20team%20sign-up">Sign ups are currently closed</a>
+				<a class="take-button take-button--primary take-button--large" href="#registration">View the signup form</a>
 				<a class="take-button take-button--outline take-button--large" href="https://linkly.link/2Firr" target="_blank" rel="noopener">Read the 2026 rules</a>
 			</div>
 			<p class="take-hero__note">
@@ -25,6 +25,7 @@ title: Take Part
 
 	<nav class="take-jump-links" aria-label="Page sections">
 		<a href="#start">Start a team</a>
+		<a href="#registration">Registration</a>
 		<a href="#essentials">Robot essentials</a>
 		<a href="#events">Events</a>
 		<a href="#questions">Team FAQs</a>
@@ -288,6 +289,30 @@ title: Take Part
 		</details>
 	</section>
 
+	<section class="take-section take-registration" id="registration">
+		<div class="take-heading">
+			<div>
+				<p class="take-label">Team registration</p>
+				<h2>Sign your team up</h2>
+			</div>
+			<p>
+				Complete the form below to register when sign-ups are open. If Google Forms does not
+				load on your device, use the direct form link instead.
+			</p>
+		</div>
+		<div class="take-form-frame">
+			<iframe
+				src="https://docs.google.com/forms/d/e/1FAIpQLSdttn8bRvoV1zlKriXIRYNkli8RzS6uYkIGc6XzRmFylv2BDQ/viewform?embedded=true"
+				title="Unibots UK team signup form"
+				loading="lazy"
+			>Loading team signup form...</iframe>
+		</div>
+		<p class="take-form-fallback">
+			Having trouble with the embedded form?
+			<a href="https://forms.gle/bN6ppCkbnKufAKhE9" target="_blank" rel="noopener">Open it in a new tab &rarr;</a>
+		</p>
+	</section>
+
 	<section class="take-signup" id="signup">
 		<div>
 			<p class="take-label">Ready to begin?</p>
@@ -298,7 +323,7 @@ title: Take Part
 			</p>
 		</div>
 		<div class="take-signup__actions">
-			<a class="take-button take-button--primary take-button--large" href="mailto:unibots.uk.comp@gmail.com?subject=Unibots%20team%20sign-up">Keep me up to date</a>
+			<a class="take-button take-button--primary take-button--large" href="#registration">View signup form</a>
 			<a class="take-button take-button--outline" href="https://discord.gg/N2xYcKAT5a" target="_blank" rel="noopener">Ask questions on Discord</a>
 		</div>
 	</section>
@@ -570,6 +595,38 @@ title: Take Part
 	.take-faq details a{ color: var(--take-ink); font-weight: 700; }
 	.take-faq__group{ margin: 2rem 0 0.8rem; font-size: 1.05rem; }
 
+	.take-registration{
+		padding: 2rem;
+		border-radius: 12px;
+		background: linear-gradient(135deg, var(--take-soft-blue), var(--take-soft-orange));
+	}
+
+	.take-form-frame{
+		overflow: hidden;
+		border: 1px solid rgba(24,33,47,0.1);
+		border-radius: 10px;
+		background: #fff;
+		box-shadow: 0 12px 28px rgba(24,33,47,0.09);
+	}
+
+	.take-form-frame iframe{
+		width: 100%;
+		height: 1050px;
+		display: block;
+		border: 0;
+	}
+
+	.take-form-fallback{
+		margin: 0.9rem 0 0;
+		font-size: 0.78rem;
+		text-align: center;
+	}
+
+	.take-form-fallback a{
+		color: var(--take-ink);
+		font-weight: 800;
+	}
+
 	.take-signup{
 		display: grid;
 		grid-template-columns: 1fr auto;
@@ -596,7 +653,7 @@ title: Take Part
 
 	@media (max-width: 650px){
 		.take-part{ padding: 0 0 2rem; }
-		.take-hero, .take-feature, .take-awards, .take-signup{ border-radius: 0; }
+		.take-hero, .take-feature, .take-awards, .take-registration, .take-signup{ border-radius: 0; }
 		.take-hero{ min-height: 680px; }
 		.take-hero::after{ background: linear-gradient(0deg, rgba(16,25,38,0.98), rgba(16,25,38,0.5) 75%, rgba(16,25,38,0.15)); }
 		.take-actions, .take-signup__actions{ flex-direction: column; }
@@ -607,5 +664,6 @@ title: Take Part
 		.take-step-list article{ grid-template-columns: 42px 1fr; padding: 1rem; }
 		.take-feature__image{ min-height: 260px; }
 		.take-event-note{ align-items: start; }
+		.take-form-frame iframe{ height: 1200px; }
 	}
 </style>
