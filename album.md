@@ -32,6 +32,13 @@ title: Album
                     <a href="https://photos.app.goo.gl/kb7xYsFyBMygs2NU7">Album Link</a>
                 </div>
 	        </details>
+            <details>
+                <summary>London Finals - 2026</summary>
+                <div class="answer">
+                    <a href="https://photos.app.goo.gl/iEHnMkXCkkJvZSfL8">Album Link</a>
+                </div>
+	        </details>
+            
         </div>
     </div>
 
