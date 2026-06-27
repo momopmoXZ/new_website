@@ -14,13 +14,11 @@ title: Schedule
 
 
 	<div class="about-header">
-		<h1>Schedule - Cambridge Regional - 21st March</h1>
+		<h1>Schedule - London Finals - 27/28 June 2026</h1>
 	</div>
 
     <section class="about-section">
-        <div class="about-content">
-            <img src="{{ '/assets/images/schedules/edinburgh2026.png' | relative_url }}" style="width:100%">
-        </div>
+		<a href="https://docs.google.com/document/d/14iDye4TrwGCaaFfQB0WDqWMkPeZw_8E43ONnLpQHdr4/edit?usp=sharing">View the schedule here!</p>
     </section>
 
     <div class="section">
