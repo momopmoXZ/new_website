@@ -88,20 +88,23 @@
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   if (!prefersReducedMotion) {
-    rotatingFooterWords.forEach((word, wordGroupIndex) => {
-      const words = word.dataset.words.split(",");
-      let wordIndex = 0;
+    const footerWordGroups = Array.from(rotatingFooterWords, (word) => ({
+      element: word,
+      words: word.dataset.words.split(","),
+      index: 0
+    }));
 
-      window.setInterval(() => {
-        word.classList.add("is-changing");
+    window.setInterval(() => {
+      footerWordGroups.forEach(({ element }) => element.classList.add("is-changing"));
 
-        window.setTimeout(() => {
-          wordIndex = (wordIndex + 1) % words.length;
-          word.textContent = words[wordIndex];
-          word.classList.remove("is-changing");
-        }, 180);
-      }, 2400 + (wordGroupIndex * 300));
-    });
+      window.setTimeout(() => {
+        footerWordGroups.forEach((group) => {
+          group.index = (group.index + 1) % group.words.length;
+          group.element.textContent = group.words[group.index];
+          group.element.classList.remove("is-changing");
+        });
+      }, 180);
+    }, 2400);
   }
 </script>
 </body>

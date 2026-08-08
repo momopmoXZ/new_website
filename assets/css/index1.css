@@ -2690,10 +2690,16 @@ a.button.disabled:hover {
 .site-footer__word {
 	display: inline-block;
 	color: var(--color-primary);
+	white-space: nowrap;
 	transition: opacity 180ms ease, transform 180ms ease;
 }
 
+.site-footer__word:first-of-type {
+	width: 11ch;
+}
+
 .site-footer__word:last-of-type {
+	width: 9ch;
 	color: var(--color-accent);
 }
 
