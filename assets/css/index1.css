@@ -70,6 +70,35 @@ summary:focus-visible {
     padding: 0 2rem;
 }
 
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    color: var(--color-ink);
+    text-decoration: none;
+}
+
+.nav-brand img {
+    flex: 0 0 auto;
+    border-radius: 50%;
+}
+
+.nav-brand__text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+
+.nav-brand__text strong {
+    font-size: 0.9rem;
+}
+
+.nav-brand__text span {
+    color: var(--color-muted);
+    font-size: 0.58rem;
+    font-weight: 500;
+}
+
 /* Links */
 .nav-links {
     display: flex;
@@ -178,6 +207,10 @@ summary:focus-visible {
     max-width: 1180px;
     margin: 2rem auto;
     padding: 0 2rem;
+}
+
+.about-container--page {
+    margin-top: 1.5rem;
 }
 
 .blog-header,

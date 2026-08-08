@@ -8,11 +8,6 @@ title: Unibots UK
 		<img src="{{ '/assets/images/DSC_2716-min.jpg' | relative_url }}" alt="Students gathered around the Unibots competition arena">
 		<div class="home-hero__shade"></div>
 		<div class="home-hero__content">
-			<div class="home-hero__brand">
-				<img src="{{ '/assets/images/unibots.png' | relative_url }}" alt="Unibots UK">
-				<span>Unibots UK</span>
-				<span class="u-font-regular">Powered by the UKESF</span>
-			</div>
 			<p class="home-kicker">The 2026-2027 season is coming soon</p>
 			<h1>Challenging students to create simple machines.</h1>
 			<p class="home-hero__intro">
