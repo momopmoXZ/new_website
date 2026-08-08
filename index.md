@@ -11,23 +11,24 @@ title: Unibots UK
 			<div class="home-hero__brand">
 				<img src="{{ '/assets/images/unibots.png' | relative_url }}" alt="Unibots UK">
 				<span>Unibots UK</span>
+				<span style="font-weight: 400;">Powered by the UKESF</span>
 			</div>
 			<p class="home-kicker">The 2026-2027 season is coming soon</p>
 			<h1>Challenging students to create simple machines.</h1>
 			<p class="home-hero__intro">
-				A student-led robotics competition bringing university teams together to design,
+				The robotics competition bringing university teams together to design,
 				build, improve, and compete across the UK.
 			</p>
 			<div class="home-actions">
-				<a class="home-button home-button--light" href="{{ '/about' | relative_url }}">About Unibots</a>
+				<a class="home-button home-button--light" href="{{ '/sign-up' | relative_url }}">Take part in Unibots</a>
 				<a class="home-button home-button--outline" href="https://discord.gg/N2xYcKAT5a" target="_blank" rel="noopener">Join our Discord</a>
 			</div>
 		</div>
 	</section>
 
-	<section class="home-glance" aria-label="Unibots 2026 at a glance">
+	<section class="home-glance" aria-label="Unibots 2027 at a glance">
 		<div>
-			<strong>3</strong>
+			<strong>5</strong>
 			<span>events across the UK</span>
 		</div>
 		<div>
@@ -90,7 +91,7 @@ title: Unibots UK
 			</p>
 			<ul>
 				<li>Build a compact, fully autonomous robot as a team</li>
-				<li>Collect ping pong balls and steel ball bearings in head-to-head-to-head-to-head matches</li>
+				<li>Earn points in head-to-head-to-head-to-head matches</li>
 				<li>Balance mechanical design, electronics, software, and match strategy</li>
 				<li>Learn from other teams and improve between events</li>
 			</ul>
