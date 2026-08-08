@@ -1,0 +1,98 @@
+---
+layout: default
+title: Unibots UK
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ '/css/index1.css' | relative_url }}">
+<link rel="shortcut icon" type="image/png" href="{{ '/favicon.png' | prepend: site.baseurl }}" >
+
+<div id="index">
+    <div id="header">
+        <div id="header-intro">
+            <div id="logo-container">
+                <img src="{{ '/assets/images/unibots.png' | relative_url }}" width="200" height="200" id="unibots-logo" alt="UniBots UK Logo">
+            </div>
+            <div id="header-text">
+                <h1>Unibots UK</h1>
+                Unibots UK is an autonomous robotics competition aimed at University students and clubs, fostering enthusiasm and engineering skills into the next generation of robotics students!
+            </div>
+        </div>
+        <div id="header-about">
+            <div id="header-about-item">
+                <div class="small">ORGANISED BY</div>
+                <div class="row">
+                    <img src="{{ '/assets/images/CURLOGO_TEXT.svg' | relative_url }}" height="100" class="logo-about cur" alt="Cambridge University Robotics Logo">
+                    <img src="{{ '/assets/images/hwu_combined_new_logo.png' | relative_url }}" class="logo-about hw" alt="Heriot-Watt Robotics Society Logo">
+                    <img src="{{ '/assets/images/QMES_Logo.png' | relative_url }}" class="logo-about qm" alt="Quen Mary Robotics Society Logo">
+                </div>
+            </div>
+        </div>
+        <div id="prizes-subsidies" class="row">
+            <div id="header-text">
+                <h2>The 2026 Season</h2>
+                It's official, the Unibots 2026 season begins!<br>
+                After the success of last year, we decided to bring back Unibots bigger and better than ever with a new format and more events.
+            </div>
+            <div id="header-text">
+                <h2>New for 2026</h2>
+                This year we are introducing Regionals! We want to help everyone across the country and enable them to have a taste of the arena and competition format before the Finals in Fune, and to help you practice in a tournament setting.<br> 
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="content">
+            <div class="desc-picture-cont">
+                <img src="{{ '/assets/images/DSC_2716-min.jpg' | relative_url }}">
+                <div class="desc">
+                    <h3>Intermediate-level Competition</h3>
+                    <p>We designed the competition to allow anyone who has elementary experience with robotics to be able to build and compete.</p>
+                    <p>For 2026, robots will go head to head to compete in the arena, trying to collect as many ping pong and steel ball bearings as possible.</p>
+                    <p>Our competition will be great fun for competitors with any level of experience!</p>
+                </div>
+            </div>
+            <div class="desc-picture-cont alt">
+                <img src="{{ '/assets/images/DSC_2517-min.jpg' | relative_url }}">
+                <div class="desc">
+                    <h3>Competition Day</h3>
+                    <p>Our regional events are held across the UK, allowing more teams than ever to take part in Unibots! In these you'll get to practice and improve your robot to be one step closer to winning the two day finals event! </p>
+                    <p>The competition is a great way to meet other students that are as passionate about robotics as you are.</p>
+                    <p>Competition dates 2026:<br>
+
+                        Edinburgh: Saturday 28 February 2026 at Heriot-Watt University.<br>
+                        Cambridge: Saturday 21 March 2026 at University of Cambridge.<br>
+                        London: Saturday 27 and Sunday 28 June 2026 at Queen Mary University of London and University College London! <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="desc-picture-vert">
+            <img src="{{ '/assets/images/DSC_2866-min.jpg' | relative_url }}">
+            <div class="desc">
+                If all this sounds fun, sign up for our competition!
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div id="info-buttons" class="button-row">
+            <a href="https://linkly.link/2Firr" class="button intro doc">2026 RULEBOOK</a>
+            <a href="" class="button rulebook">2026 SIGN UPS CLOSED</a>
+        </div>
+        <div id="info-buttons" class="button-row">
+            <a href="https://www.instagram.com/unibots_uk/" class="button signup">INSTAGRAM</a>
+            <a href="https://discord.gg/N2xYcKAT5a" class="button discord">DISCORD SERVER</a>
+        </div>
+    </div>
+
+    <div class="section">
+        {% include sponsors.html %}
+    </div>
+</div>

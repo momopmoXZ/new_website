@@ -18,7 +18,7 @@
         <a class="nav-brand" href="{{ '/' | relative_url }}" aria-label="Unibots UK, powered by the UKESF">
           <img src="{{ '/assets/images/unibots.png' | relative_url }}" width="40" height="40" alt="Unibots UK Logo">
           <span class="nav-brand__text">
-            <strong>Unibots UK,</strong>
+            <strong>UNIBOTS UK</strong>
             <span>powered by the UKESF</span>
           </span>
         </a>
@@ -44,6 +44,38 @@
 
   {{ content }}
 
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__identity">
+        <p class="site-footer__tagline">
+          We challenge students to
+          <span class="site-footer__word" data-words="design,build,manufacture,test">design</span>
+          simple machines, and connect them with
+          <span class="site-footer__word" data-words="industry,sponsors,academics,creatives">industry</span>.
+        </p>
+        <address>
+          <strong>Unibots CIC</strong><br>
+          Office 482, 18 Young Street, Unit Lge,<br>
+          Edinburgh, Scotland, EH2 4JB
+        </address>
+      </div>
+
+      <nav class="site-footer__links" aria-label="Social links">
+        <h2>Social</h2>
+        <a href="https://www.linkedin.com/company/unibots-uk/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/unibots_uk/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+
+      <nav class="site-footer__links" aria-label="Useful links">
+        <h2>Useful links</h2>
+        <a href="{{ '/about' | relative_url }}">About Unibots</a>
+        <a href="{{ '/sign-up/#questions' | relative_url }}">FAQs</a>
+        <a href="mailto:unibots.uk.comp@gmail.com">Contact us</a>
+        <a href="{{ '/support_us' | relative_url }}">Support us</a>
+      </nav>
+    </div>
+  </footer>
+
   <script>
   const menu = document.getElementById("mobile-menu");
   const navLinks = document.getElementById("nav-links");
@@ -51,6 +83,26 @@
   menu.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
+
+  const rotatingFooterWords = document.querySelectorAll(".site-footer__word");
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!prefersReducedMotion) {
+    rotatingFooterWords.forEach((word, wordGroupIndex) => {
+      const words = word.dataset.words.split(",");
+      let wordIndex = 0;
+
+      window.setInterval(() => {
+        word.classList.add("is-changing");
+
+        window.setTimeout(() => {
+          wordIndex = (wordIndex + 1) % words.length;
+          word.textContent = words[wordIndex];
+          word.classList.remove("is-changing");
+        }, 180);
+      }, 2400 + (wordGroupIndex * 300));
+    });
+  }
 </script>
 </body>
 </html>
