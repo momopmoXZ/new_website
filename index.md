@@ -12,23 +12,15 @@ title: Unibots UK
 				<img src="{{ '/assets/images/unibots.png' | relative_url }}" alt="Unibots UK">
 				<span>Unibots UK</span>
 			</div>
-			<p class="home-kicker">The 2026 season is underway</p>
+			<p class="home-kicker">The 2026-2027 season is coming soon</p>
 			<h1>Challenging students to create simple machines.</h1>
 			<p class="home-hero__intro">
 				A student-led robotics competition bringing university teams together to design,
 				build, improve, and compete across the UK.
 			</p>
 			<div class="home-actions">
-				<a class="home-button home-button--light" href="{{ '/about' | relative_url }}">Discover Unibots</a>
+				<a class="home-button home-button--light" href="{{ '/about' | relative_url }}">About Unibots</a>
 				<a class="home-button home-button--outline" href="https://discord.gg/N2xYcKAT5a" target="_blank" rel="noopener">Join our Discord</a>
-			</div>
-			<div class="home-organisers">
-				<p>Organised by</p>
-				<div class="home-organisers__logos" aria-label="Unibots organising societies">
-					<img src="{{ '/assets/images/CURLOGO_TEXT.svg' | relative_url }}" alt="Cambridge University Robotics">
-					<img src="{{ '/assets/images/hwu_combined_new_logo.png' | relative_url }}" alt="Heriot-Watt University Robotics Society">
-					<img src="{{ '/assets/images/QMES_Logo.png' | relative_url }}" alt="Queen Mary Electronics Society">
-				</div>
 			</div>
 		</div>
 	</section>
@@ -51,7 +43,7 @@ title: Unibots UK
 	<section class="home-section home-season">
 		<div class="home-section__heading">
 			<div>
-				<p class="home-kicker">New for 2026</p>
+				<p class="home-kicker">The 2026 Season</p>
 				<h2>More chances to build, test, and improve</h2>
 			</div>
 			<p>

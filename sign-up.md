@@ -16,7 +16,7 @@ permalink: /sign-up/
 			</p>
 			<div class="take-actions">
 				<a class="take-button take-button--primary take-button--large" href="#registration">View the signup form</a>
-				<a class="take-button take-button--outline take-button--large" href="https://linkly.link/2Firr" target="_blank" rel="noopener">Read the 2026 rules</a>
+				<a class="take-button take-button--outline take-button--large" href="" target="_blank" rel="noopener">2026-2027 rules coming soon</a>
 			</div>
 			<p class="take-hero__note">
 				2025-2026 season sign-ups are closed. Get in touch to hear about the next season.
@@ -157,7 +157,7 @@ permalink: /sign-up/
 		</div>
 
 		<div class="take-event-grid">
-			<article>
+			<!-- <article>
 				<p class="take-event__type">Regional</p>
 				<h3>Edinburgh</h3>
 				<p class="take-event__date">28 February 2026</p>
@@ -177,7 +177,7 @@ permalink: /sign-up/
 				<p class="take-event__date">27-28 June 2026</p>
 				<p>Queen Mary University of London and University College London</p>
 				<span>Main competition</span>
-			</article>
+			</article> -->
 		</div>
 
 		<div class="take-finals-weekend">
