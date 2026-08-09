@@ -2535,6 +2535,17 @@ a.button.disabled:hover {
 	border-radius: var(--radius-lg);
 }
 
+.home-hero__shade,
+.take-hero::after {
+	background: linear-gradient(90deg, rgba(16,25,38,0.95) 0%, rgba(16,25,38,0.72) 52%, rgba(16,25,38,0.12) 100%);
+}
+
+.take-jump-links {
+	margin: -1.4rem 1.5rem 3.5rem;
+	border-radius: 10px;
+	box-shadow: var(--shadow-raised);
+}
+
 /* Shared hero typography and rhythm */
 .home-hero__content,
 .take-hero__content,
@@ -2634,6 +2645,15 @@ a.button.disabled:hover {
 
 	.support-hero::after {
 		background: linear-gradient(0deg, rgba(16,25,38,0.98), rgba(16,25,38,0.5) 75%, rgba(16,25,38,0.15));
+	}
+
+	.home-hero__shade,
+	.take-hero::after {
+		background: linear-gradient(0deg, rgba(16,25,38,0.98), rgba(16,25,38,0.5) 75%, rgba(16,25,38,0.12));
+	}
+
+	.take-jump-links {
+		margin: -1rem 1rem 3rem;
 	}
 
 	.support-hero__content {
