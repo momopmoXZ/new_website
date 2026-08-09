@@ -1323,22 +1323,12 @@ a.button.disabled:hover {
 	.take-part h1, .take-part h2, .take-part h3, .take-part p{ margin-top: 0; }
 	.take-part p, .take-part li{ color: var(--take-muted); line-height: 1.65; }
 
-	.take-label{
-		margin-bottom: 0.6rem;
-		color: var(--take-blue) !important;
-		font-size: 0.76rem;
-		font-weight: 850;
-		letter-spacing: 0.13em;
-		text-transform: uppercase;
-	}
-
 	.take-hero{
 		position: relative;
-		min-height: 620px;
 		display: flex;
 		align-items: flex-end;
+		margin: 0 0 2.5rem;
 		overflow: hidden;
-		border-radius: 14px;
 		background: var(--take-ink);
 	}
 
@@ -1360,7 +1350,7 @@ a.button.disabled:hover {
 	.take-hero__content{
 		position: relative;
 		z-index: 1;
-		max-width: 750px;
+		max-width: 770px;
 		padding: clamp(1.5rem, 5vw, 3.5rem);
 	}
 
@@ -1373,9 +1363,19 @@ a.button.disabled:hover {
 	}
 
 	.take-hero__content > p:not(.take-label, .take-hero__note){
-		max-width: 640px;
+		max-width: 680px;
+		margin: 0 0 1.25rem;
 		color: rgba(255,255,255,0.84);
 		font-size: 1.08rem;
+	}
+
+	.take-label{
+		margin: 0 0 0.6rem;
+		color: var(--support-blue) !important;
+		font-size: 0.76rem;
+		font-weight: 850;
+		letter-spacing: 0.13em;
+		text-transform: uppercase;
 	}
 
 	.take-hero__note{
