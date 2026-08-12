@@ -21,7 +21,7 @@
 	<nav class="take-jump-links" aria-label="Page sections">
 		<a href="#start">Start a team</a>
 		<a href="#essentials">Robot essentials</a>
-		<a href="#events">Events</a>
+		<a href="#events">Season timeline</a>
 		<a href="#questions">Team FAQs</a>
 		<a href="#registration">Registration</a>
 	</nav>
@@ -112,7 +112,7 @@
 	<section class="take-section" id="events">
 		<div class="take-heading">
 			<div>
-				<p class="take-label">The competition year</p>
+				<p class="take-label">The season timeline</p>
 				<h2>Build, practise, then compete</h2>
 			</div>
 			<p>
@@ -121,36 +121,44 @@
 			</p>
 		</div>
 
-		<div class="take-event-grid">
-			<!-- <article>
-				<p class="take-event__type">Regional</p>
-				<h3>Edinburgh</h3>
-				<p class="take-event__date">28 February 2026</p>
-				<p>The National Robotarium, Heriot-Watt University</p>
-				<span>Practise and improve</span>
-			</article>
-			<article>
-				<p class="take-event__type">Regional</p>
-				<h3>Cambridge</h3>
-				<p class="take-event__date">21 March 2026</p>
-				<p>University of Cambridge</p>
-				<span>Practise and improve</span>
-			</article>
-			<article class="take-event--finals">
-				<p class="take-event__type">Two-day finals</p>
-				<h3>London</h3>
-				<p class="take-event__date">27-28 June 2026</p>
-				<p>Queen Mary University of London and University College London</p>
-				<span>Main competition</span>
-			</article> -->
-		</div>
+		<div class="season-timeline" role="region" aria-label="Unibots season timeline" tabindex="0">
+			<div class="season-timeline__grid">
+				<div class="season-timeline__month">Aug</div>
+				<div class="season-timeline__month">Sep</div>
+				<div class="season-timeline__month">Oct</div>
+				<div class="season-timeline__month">Nov</div>
+				<div class="season-timeline__month">Dec</div>
+				<div class="season-timeline__month">Jan</div>
+				<div class="season-timeline__month">Feb</div>
+				<div class="season-timeline__month">Mar</div>
+				<div class="season-timeline__month">Apr</div>
+				<div class="season-timeline__month">May</div>
+				<div class="season-timeline__month">Jun</div>
+				<div class="season-timeline__month">Jul</div>
+				<div class="season-timeline__month">Aug</div>
 
-		<div class="take-finals-weekend">
-			<strong>Finals weekend is more than the competition.</strong>
-			<p>
-				Alongside practice matches and a full day of head-to-head competition, teams can take
-				part in networking, flash talks including sponsor talks, and a robotics-themed team activity.
-			</p>
+				<button class="season-timeline__bar season-timeline__bar--registration" type="button" style="--start: 1; --end: 8; --row: 2;" data-timeline-title="Team registration · August to February" data-timeline-description="Register your team and join the Unibots community. You do not need every detail finalised yet — gather your people, tell us you are interested, and get ready for the season ahead.">Team registration</button>
+
+				<button class="season-timeline__milestone season-timeline__milestone--launch" type="button" style="--start: 2; --row: 3;" aria-label="Season launch in September" data-timeline-title="Season launch · September" data-timeline-description="The rules remain veiled in mystery until the season launch. This is when we reveal the new challenge, arena and scoring — and teams can begin turning first impressions into a strategy."><span>Season launch</span></button>
+
+				<button class="season-timeline__bar season-timeline__bar--workshops" type="button" style="--start: 3; --end: 11; --row: 4;" data-timeline-title="Workshops &amp; training · October to February" data-timeline-description="Build your confidence with electronics basics through the new Unibots Portal. Teams will have practical resources and guidance, alongside training for specific software used throughout the design and build process.">Workshops &amp; training</button>
+
+				<button class="season-timeline__bar season-timeline__bar--build" type="button" style="--start: 3; --end: 11; --row: 5;" data-timeline-title="Design, build &amp; test · October to February" data-timeline-description="Come up with creative ideas to solve a ‘simple’ problem, then turn them into a working robot. What works and what does not? Only you can find out — by building, testing and improving your design.">Design, build &amp; test your robot</button>
+
+				<button class="season-timeline__milestone season-timeline__milestone--call" type="button" style="--start: 5; --row: 6;" aria-label="Check-in call in December" data-timeline-title="Check-in call · December" data-timeline-description="Ask questions about the rules, meet other teams and hear from people involved in industry and academia. Compare progress, share ideas and make sure your team is heading in the right direction."><span>Check-in call</span></button>
+				<button class="season-timeline__milestone season-timeline__milestone--call" type="button" style="--start: 9; --row: 6;" aria-label="Check-in call in April" data-timeline-title="Check-in call · April" data-timeline-description="Ask questions about the rules, meet other teams and hear from people involved in industry and academia. Compare progress, share ideas and make sure your team is heading in the right direction."><span>Check-in call</span></button>
+
+				<button class="season-timeline__bar season-timeline__bar--regionals" type="button" style="--start: 7; --end: 9; --row: 7;" data-timeline-title="Regional competitions · February to March" data-timeline-description="Test your robot in our competition-ready arena. The perfect time for things to go wrong is before the finals, so we give teams opportunities across the country to practise in proper matches. Regionals do not affect finals qualification — everyone is welcome — but testing early and often can give you a real advantage.">Regional competitions</button>
+
+				<!-- <button class="season-timeline__bar season-timeline__bar--compete" type="button" style="--start: 7; --end: 12; --row: 8;" data-timeline-title="Compete with your robot · February to June" data-timeline-description="">Compete with your robot</button> -->
+
+				<button class="season-timeline__milestone season-timeline__milestone--finals" type="button" style="--start: 11; --row: 7;" aria-label="Finals in June" data-timeline-title="Finals competition · June" data-timeline-description="You have put work into your robot throughout the year; now it is time to put it to the test. Take your place in the arena, learn how your ideas perform under pressure and enjoy competing alongside teams from across the UK. The season culminates in a two-day finals weekend of head-to-head competition, networking, talks, and a robotics-themed team activity. Finally, awards are given, hands are shaken, and your hard work is rewarded!"><span>Finals competition</span></button>
+			</div>
+		</div>
+		<p class="season-timeline__hint">Swipe sideways to explore, then tap an activity to learn more.</p>
+		<div class="season-timeline__details" id="season-timeline-details" aria-live="polite">
+			<strong>Explore the season</strong>
+			<p>Hover over, focus or select an activity in the timeline to learn more.</p>
 		</div>
 
 		<div class="take-event-note">

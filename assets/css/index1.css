@@ -1535,6 +1535,134 @@ a.button.disabled:hover {
 	.take-event-grid article > p:not(.take-event__type, .take-event__date){ min-height: 76px; font-size: 0.82rem; }
 	.take-event-grid span{ color: var(--take-blue); font-size: 0.7rem; font-weight: 850; text-transform: uppercase; }
 
+	.season-timeline{
+		overflow-x: auto;
+		padding: 1.25rem;
+		border-radius: 12px;
+		background: var(--take-ink);
+		box-shadow: 0 14px 32px rgba(24,33,47,0.14);
+		scrollbar-color: var(--take-orange) rgba(255,255,255,0.15);
+	}
+
+	.season-timeline:focus-visible{ outline: 3px solid var(--take-orange); outline-offset: 3px; }
+
+	.season-timeline__grid{
+		display: grid;
+		grid-template-columns: repeat(13, minmax(58px, 1fr));
+		grid-auto-rows: minmax(52px, auto);
+		align-items: center;
+		min-width: 860px;
+	}
+
+	.season-timeline__month{
+		align-self: stretch;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.65rem 0.2rem;
+		border-bottom: 1px solid rgba(255,255,255,0.2);
+		color: #fff;
+		font-size: 0.72rem;
+		font-weight: 850;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+	}
+
+	.season-timeline__month + .season-timeline__month{ border-left: 1px solid rgba(255,255,255,0.08); }
+
+	.season-timeline__bar,
+	.season-timeline__milestone{
+		position: relative;
+		z-index: 1;
+		grid-row: var(--row);
+	}
+
+	.season-timeline__bar{ grid-column: var(--start) / var(--end); }
+	.season-timeline__milestone{ grid-column: var(--start); }
+
+	.season-timeline__bar{
+		min-height: 34px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 7px 3px;
+		padding: 0.45rem 0.65rem;
+		border: 2px solid transparent;
+		border-radius: 999px;
+		color: var(--take-ink);
+		font-size: 0.7rem;
+		font-weight: 850;
+		line-height: 1.2;
+		text-align: center;
+		font-family: inherit;
+		cursor: pointer;
+		transition: transform 0.15s ease, border-color 0.15s ease, filter 0.15s ease, box-shadow 0.15s ease;
+	}
+
+	.season-timeline__bar:hover,
+	.season-timeline__bar:focus-visible,
+	.season-timeline__bar.is-active{
+		transform: scale(1.025);
+		border-color: rgba(255,255,255,0.85);
+		filter: brightness(1.07);
+		box-shadow: 0 5px 14px rgba(0,0,0,0.24);
+	}
+
+	.season-timeline__bar--registration,
+	.season-timeline__bar--compete{ background: var(--take-orange); }
+	.season-timeline__bar--workshops{ background: #fff; }
+	.season-timeline__bar--build{ background: var(--take-blue); color: #fff; }
+	.season-timeline__bar--regionals{ background: #42d3dc; color: var(--take-ink); }
+
+	.season-timeline__milestone{
+		align-self: center;
+		justify-self: center;
+		width: 38px;
+		height: 38px;
+		border: 4px solid var(--take-ink);
+		border-radius: 50%;
+		background: var(--take-orange);
+		box-shadow: 0 0 0 2px var(--take-orange);
+		padding: 0;
+		font-family: inherit;
+		cursor: pointer;
+		transition: transform 0.15s ease;
+	}
+
+	.season-timeline__milestone:hover,
+	.season-timeline__milestone:focus-visible,
+	.season-timeline__milestone.is-active{ transform: scale(1.12); }
+
+	.season-timeline__milestone span{
+		position: absolute;
+		left: 50%;
+		bottom: -1.05rem;
+		width: 88px;
+		transform: translateX(-50%);
+		color: #fff;
+		font-size: 0.59rem;
+		font-weight: 800;
+		line-height: 1;
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	.season-timeline__milestone--call{ background: #fff; box-shadow: 0 0 0 2px #fff; }
+	.season-timeline__milestone--finals{ background: var(--take-blue); box-shadow: 0 0 0 2px var(--take-blue); }
+	.season-timeline__hint{ display: none; }
+
+	.season-timeline__details{
+		min-height: 132px;
+		margin-top: 0.85rem;
+		padding: 1.1rem 1.2rem;
+		border-left: 5px solid var(--take-blue);
+		border-radius: 8px;
+		background: var(--take-soft-blue);
+	}
+
+	.season-timeline__details strong{ display: block; margin-bottom: 0.3rem; color: var(--take-ink); font-size: 0.95rem; }
+	.season-timeline__details p{ margin: 0; color: var(--take-muted); font-size: 0.82rem; line-height: 1.55; }
+
 	.take-finals-weekend{
 		margin-top: 1rem;
 		padding: 1.1rem 1.2rem;
@@ -1655,6 +1783,9 @@ a.button.disabled:hover {
 		.take-event-note{ align-items: start; }
 		.take-registration__actions{ grid-template-columns: 1fr; }
 		.take-form-frame iframe{ height: clamp(380px, 62vh, 560px); }
+		.season-timeline{ margin-right: -1rem; padding: 0.85rem 1rem 1rem; border-radius: 10px 0 0 10px; }
+		.season-timeline__grid{ min-width: 820px; }
+		.season-timeline__hint{ display: block; margin: 0.55rem 0 0; color: var(--take-muted); font-size: 0.7rem; }
 	}
 
 

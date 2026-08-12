@@ -49,7 +49,7 @@
       <div class="site-footer__identity">
         <p class="site-footer__tagline">
           We challenge students to
-          <span class="site-footer__word" data-words="design,build,manufacture,test">design</span>
+          <span class="site-footer__word" data-words="create,design,build,manufacture,test">create</span>
           simple machines, and connect them with
           <span class="site-footer__word" data-words="industry,sponsors,academics,creatives">industry</span>
         </p>
@@ -105,6 +105,24 @@
         });
       }, 180);
     }, 2400);
+  }
+
+  const seasonTimelineItems = document.querySelectorAll("[data-timeline-description]");
+  const seasonTimelineDetails = document.getElementById("season-timeline-details");
+
+  if (seasonTimelineDetails && seasonTimelineItems.length) {
+    const showTimelineDetails = (item) => {
+      seasonTimelineItems.forEach((timelineItem) => timelineItem.classList.remove("is-active"));
+      item.classList.add("is-active");
+      seasonTimelineDetails.querySelector("strong").textContent = item.dataset.timelineTitle;
+      seasonTimelineDetails.querySelector("p").textContent = item.dataset.timelineDescription;
+    };
+
+    seasonTimelineItems.forEach((item) => {
+      item.addEventListener("mouseenter", () => showTimelineDetails(item));
+      item.addEventListener("focus", () => showTimelineDetails(item));
+      item.addEventListener("click", () => showTimelineDetails(item));
+    });
   }
 </script>
 </body>
