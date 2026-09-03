@@ -34,10 +34,9 @@
       <div class="nav-links" id="nav-links">
         <a href="{{ '/' | relative_url }}" class="nav-link">Home</a>
         <a href="{{ '/about' | relative_url }}" class="nav-link">About</a>
-		    <a href="{{ '/support_us' | relative_url }}" class="nav-link">Support us</a>
+        <a href="{{ '/support_us' | relative_url }}" class="nav-link">Support us</a>
         <a href="{{ '/sign-up' | relative_url }}" class="nav-link nav-link--signup">Sign-up</a>
 		    <a href="{{ '/blog' | relative_url }}" class="nav-link">Blog</a>
-
       </div>
     </div>
   </nav>
@@ -68,10 +67,9 @@
 
       <nav class="site-footer__links" aria-label="Useful links">
         <h2>Useful links</h2>
-        <a href="{{ '/about' | relative_url }}">About Unibots</a>
         <a href="{{ '/sign-up/#questions' | relative_url }}">FAQs</a>
-        <a href="mailto:unibots.uk.comp@gmail.com">Contact us</a>
         <a href="{{ '/support_us' | relative_url }}">Support us</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact us</a>
       </nav>
     </div>
   </footer>
@@ -124,6 +122,94 @@
       item.addEventListener("click", () => showTimelineDetails(item));
     });
   }
+
+  document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+    const track = carousel.querySelector("[data-carousel-track]");
+    const slides = Array.from(carousel.querySelectorAll("[data-carousel-slide]"));
+    const dotsContainer = carousel.querySelector("[data-carousel-dots]");
+    const status = carousel.querySelector("[data-carousel-status]");
+    let activeIndex = 0;
+    let autoScrollId;
+
+    const stopAutoScroll = () => {
+      if (autoScrollId) {
+        window.clearInterval(autoScrollId);
+        autoScrollId = undefined;
+      }
+    };
+
+    const dots = slides.map((slide, index) => {
+      const dot = document.createElement("button");
+      dot.className = "support-carousel__dot";
+      dot.type = "button";
+      dot.setAttribute("aria-label", `Show photo ${index + 1}`);
+      dot.addEventListener("click", () => showSlide(index));
+      dotsContainer.appendChild(dot);
+      return dot;
+    });
+
+    const showSlide = (index) => {
+      activeIndex = (index + slides.length) % slides.length;
+      track.style.transform = `translateX(-${activeIndex * 100}%)`;
+      slides.forEach((slide, slideIndex) => slide.setAttribute("aria-hidden", slideIndex !== activeIndex));
+      dots.forEach((dot, dotIndex) => {
+        dot.classList.toggle("is-active", dotIndex === activeIndex);
+        dot.setAttribute("aria-current", dotIndex === activeIndex ? "true" : "false");
+      });
+      status.textContent = `Photo ${activeIndex + 1} of ${slides.length}`;
+    };
+
+    carousel.querySelector("[data-carousel-previous]").addEventListener("click", () => showSlide(activeIndex - 1));
+    carousel.querySelector("[data-carousel-next]").addEventListener("click", () => showSlide(activeIndex + 1));
+    carousel.addEventListener("keydown", (event) => {
+      stopAutoScroll();
+      if (event.key === "ArrowLeft") showSlide(activeIndex - 1);
+      if (event.key === "ArrowRight") showSlide(activeIndex + 1);
+    });
+
+    carousel.addEventListener("pointerdown", stopAutoScroll, { once: true });
+    carousel.addEventListener("focusin", stopAutoScroll, { once: true });
+
+    showSlide(0);
+
+    if (!prefersReducedMotion && slides.length > 1) {
+      autoScrollId = window.setInterval(() => showSlide(activeIndex + 1), 5000);
+    }
+  });
+
+  document.querySelectorAll("[data-contact-form]").forEach((form) => {
+    const submitButton = form.querySelector("button[type='submit']");
+    const status = form.querySelector("[data-contact-status]");
+    const defaultButtonText = submitButton.textContent;
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      submitButton.disabled = true;
+      submitButton.textContent = "Sending…";
+      status.className = "contact-form__status";
+      status.textContent = "";
+
+      try {
+        const response = await window.fetch(form.action, {
+          method: form.method,
+          body: new FormData(form),
+          headers: { Accept: "application/json" }
+        });
+
+        if (!response.ok) throw new Error("The message could not be sent.");
+
+        form.reset();
+        status.classList.add("is-success");
+        status.textContent = "Your message has been sent, we’ll be in touch soon!";
+      } catch (error) {
+        status.classList.add("is-error");
+        status.textContent = "We couldn’t send your message. Please try again or email us directly.";
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = defaultButtonText;
+      }
+    });
+  });
 </script>
 </body>
 </html>

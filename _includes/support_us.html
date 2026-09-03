@@ -8,17 +8,43 @@
 				Help us challenge students across the UK to build real autonomous robots, meet peers from other
 				universities, and turn classroom knowledge into practical engineering experience.
 			</p>
-			<a class="support-cta" href="mailto:unibots.uk.comp@gmail.com">Start a sponsorship conversation</a>
+			<a class="support-cta" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
 		</div>
 	</section>
 
-	<section class="about-section support-intro">
-		<h2>Invest in the next generation of robotics talent</h2>
-		<p>
+	<section class="partner-section">
+		<div class="partner-heading">
+			<div>
+				<p class="partner-label">Why support Unibots?</p>
+				<h2>Invest in practical engineering talent</h2>
+			</div>
+			<p>
 			Unibots is an inter-university robotics competition designed to be accessible, energetic,
 			and genuinely hands-on. Built around challenge, creativity, and community, it asks students
 			to solve real engineering problems with simple machines they design, build, debug, and
 			compete with themselves.
+			</p>
+		</div>
+		<div class="partner-impact-grid">
+			<article>
+				<h3>Reach motivated students</h3>
+				<p>Meet engineers, computer scientists, designers, and builders while they are actively applying their skills.</p>
+			</article>
+			<article>
+				<h3>Enable accessible robotics</h3>
+				<p>Help keep entry and attendance free while supporting the equipment and infrastructure students need.</p>
+			</article>
+			<article>
+				<h3>Build meaningful connections</h3>
+				<p>Share your work through talks, event presence, volunteering, and conversations with teams.</p>
+			</article>
+		</div>
+	</section>
+
+	<!-- <section class="about-section support-intro">
+		<h2>Invest in the next generation of robotics talent</h2>
+		<p>
+
 		</p>
 
 		<div class="support-impact-list" aria-label="Sponsorship impact">
@@ -35,12 +61,36 @@
 				<span>Share your work with students through talks, booths, awards, and direct event engagement.</span>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<figure class="support-photo support-photo--wide">
-		<img src="{{ '/assets/images/future_advertising/DSC3376.jpg' | relative_url }}" alt="Students fixing a robot during a Unibots event" loading="lazy">
-		<figcaption>Students solving problems hands-on throughout the event.</figcaption>
-	</figure>
+	<div class="support-carousel" data-carousel aria-label="Students taking part in Unibots events">
+		<div class="support-carousel__viewport">
+			<div class="support-carousel__track" data-carousel-track>
+				<figure class="support-carousel__slide" data-carousel-slide>
+					<img src="{{ '/assets/images/engaging_photos/DSC04212.JPG' | relative_url }}" alt="Unibots organisers celebrating with students at the London finals">
+					<figcaption>Celebrating the teams at the London finals.</figcaption>
+				</figure>
+				<figure class="support-carousel__slide" data-carousel-slide>
+					<img src="{{ '/assets/images/engaging_photos/DSC5959.JPG' | relative_url }}" alt="Students working together to repair a robot beside the competition arena" loading="lazy">
+					<figcaption>Teams solve problems together between matches.</figcaption>
+				</figure>
+				<figure class="support-carousel__slide" data-carousel-slide>
+					<img src="{{ '/assets/images/engaging_photos/P1015979.JPG' | relative_url }}" alt="Students gathered around robots competing in the Unibots arena" loading="lazy">
+					<figcaption>Student-built robots take to the arena.</figcaption>
+				</figure>
+				<figure class="support-carousel__slide" data-carousel-slide>
+					<img src="{{ '/assets/images/engaging_photos/P1016096.JPG' | relative_url }}" alt="Students cheering as a robot competes in the arena" loading="lazy">
+					<figcaption>Competition brings teams together.</figcaption>
+				</figure>
+			</div>
+		</div>
+		<button class="support-carousel__button support-carousel__button--previous" type="button" data-carousel-previous aria-label="Show previous photo">&#8592;</button>
+		<button class="support-carousel__button support-carousel__button--next" type="button" data-carousel-next aria-label="Show next photo">&#8594;</button>
+		<div class="support-carousel__footer">
+			<div class="support-carousel__dots" data-carousel-dots aria-label="Choose a photo"></div>
+			<p class="support-carousel__status" data-carousel-status aria-live="polite">Photo 1 of 4</p>
+		</div>
+	</div>
 
 	<section class="about-section">
 		<h2>What students take from Unibots</h2>
@@ -92,30 +142,35 @@
 		</figure>
 	</div>
 
-	<section class="about-section volunteer-section">
-		<h2>Support us with your time</h2>
-		<p>
-			Not every contribution has to be financial. Unibots events rely on volunteers who help
-			teams feel welcome, keep matches moving, support refereeing, and create the community
-			that makes students want to keep building.
-		</p>
-
-		<div class="volunteer-grid" aria-label="Volunteer roles">
-			<div class="volunteer-item">
-				<strong>Support the event</strong>
-				<span>Help with setup, team check-in, schedules, match flow, and the practical details that keep the day calm!</span>
+	<section class="partner-section partner-testimonials">
+		<div class="partner-heading">
+			<div>
+				<p class="partner-label">Support with your time</p>
+				<h2>Help make the event happen</h2>
 			</div>
-			<div class="volunteer-item">
-				<strong>Support the teams</strong>
-				<span>Keep the energy high, answer questions, and help create a friendly competition atmosphere!</span>
-			</div>
-			<div class="volunteer-item">
-				<strong>Share expertise</strong>
-				<span>Join judging, give technical feedback, or bring industry perspective to students building their first robots!</span>
-			</div>
+			<p>
+				Not every contribution has to be financial. Unibots events rely on volunteers to help
+				teams feel welcome, keep matches moving, and create the community
+				that makes students want to keep building.
+			</p>
 		</div>
 
-		<p>
+		<div class="partner-quote-grid" aria-label="Volunteer roles">
+			<article>
+				<h3>Support the event</h3>
+				<p>Help with setup, team check-in, schedules, match flow, and the practical details that keep the day flowing!</p>
+			</article>
+			<article>
+				<h3>Support the teams</h3>
+				<p>Keep the energy high, answer questions, and help create a friendly competition atmosphere!</p>
+			</article>
+			<article>
+				<h3>Share expertise</h3>
+				<p>Join judging, give technical feedback, or bring industry perspective to students building their first robots!</p>
+			</article>
+		</div>
+
+		<p class="partner-testimonials__footer">
 			Whether you can give a day, bring a colleague group, or help at a specific regional event,
 			your time directly makes Unibots possible.
 		</p>
@@ -124,48 +179,29 @@
 		</div>
 	</section>
 
-	<section class="about-section">
-		<h2>Organisations we have worked with</h2>
-
-		<div class="sponsor-marquee" aria-label="Previous sponsors and collaborators">
-			<div class="sponsor-marquee__track">
-				<div class="sponsor-chip"><img src="{{ '/assets/images/NR.png' | relative_url }}" alt="National Robotarium" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/Kaikaku.jpg' | relative_url }}" alt="Kaikaku" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/RS.svg' | relative_url }}" alt="RS" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/Accu.png' | relative_url }}" alt="Accu" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/ECR.jpg' | relative_url }}" alt="Edinburgh Centre for Robotics" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/jane-street.png' | relative_url }}" alt="Jane Street" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/CENSIS.png' | relative_url }}" alt="CENSIS" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/LABMAN.png' | relative_url }}" alt="LABMAN" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/Autodesk.png' | relative_url }}" alt="Autodesk" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/ooznest_logo.png' | relative_url }}" alt="Ooznest" loading="lazy"></div>
-
-				<div class="sponsor-chip"><img src="{{ '/assets/images/NR.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/Kaikaku.jpg' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/RS.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/Accu.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/ECR.jpg' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/jane-street.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/CENSIS.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/LABMAN.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/Autodesk.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/ooznest_logo.png' | relative_url }}" alt="Ooznest" loading="lazy"></div>
-
-				<div class="sponsor-chip"><img src="{{ '/assets/images/NR.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/Kaikaku.jpg' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/RS.svg' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/Accu.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/ECR.jpg' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/jane-street.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/CENSIS.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/LABMAN.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/Autodesk.png' | relative_url }}" alt="" aria-hidden="true" loading="lazy"></div>
-				<div class="sponsor-chip"><img src="{{ '/assets/images/ooznest_logo.png' | relative_url }}" alt="Ooznest" loading="lazy"></div>
+	<section class="partner-section partner-history">
+		<div class="partner-heading">
+			<div>
+				<p class="partner-label">Our community</p>
+				<h2>Organisations we have worked with</h2>
 			</div>
+			<p>Industry, research, and education partners have helped Unibots grow into a national student competition.</p>
+		</div>
+		<div class="partner-logo-grid" aria-label="Previous sponsors and collaborators">
+			<img src="{{ '/assets/images/NR.png' | relative_url }}" alt="National Robotarium" loading="lazy">
+			<img src="{{ '/assets/images/Kaikaku.jpg' | relative_url }}" alt="Kaikaku" loading="lazy">
+			<img src="{{ '/assets/images/RS.svg' | relative_url }}" alt="RS" loading="lazy">
+			<img src="{{ '/assets/images/Accu.png' | relative_url }}" alt="Accu" loading="lazy">
+			<img src="{{ '/assets/images/ECR.jpg' | relative_url }}" alt="Edinburgh Centre for Robotics" loading="lazy">
+			<img src="{{ '/assets/images/jane-street.png' | relative_url }}" alt="Jane Street" loading="lazy">
+			<img src="{{ '/assets/images/CENSIS.png' | relative_url }}" alt="CENSIS" loading="lazy">
+			<img src="{{ '/assets/images/LABMAN.png' | relative_url }}" alt="Labman" loading="lazy">
+			<img src="{{ '/assets/images/Autodesk.png' | relative_url }}" alt="Autodesk" loading="lazy">
+			<img src="{{ '/assets/images/ooznest_logo.png' | relative_url }}" alt="Ooznest" loading="lazy">
 		</div>
 	</section>
 
-	<section class="about-section">
+	<!-- <section class="about-section">
 		<h2>Sponsorship tiers</h2>
 		<p>
 			Each package is built to give sponsors visible, meaningful contact with teams while directly
@@ -210,9 +246,14 @@
 				</ul>
 			</div>
 		</div>
+	</section> -->
 
-		<div class="support-button-row support-contact">
-			<a class="support-cta" href="mailto:unibots.uk.comp@gmail.com">Start a sponsorship conversation</a>
+	<section class="partner-closing">
+		<div>
+			<p class="partner-label">Be part of the next event</p>
+			<h2>Let us build a partnership that matters</h2>
+			<p>Tell us what your organisation cares about and how you would like to support practical student robotics.</p>
 		</div>
+		<a class="partner-button partner-button--primary partner-button--large" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
 	</section>
 </div>
