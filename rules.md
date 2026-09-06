@@ -12,7 +12,7 @@ title: Redirecting to Rules
     <title>Redirecting to Rules</title>
 </head>
 <body>
-    <p>Redirecting to rules <a href="https://drive.google.com/file/d/1o8o7uDTNMdY5BcpHWy7s0t6RFLKLWaQE/view?usp=sharing">Take Part</a>.</p>
+    <p>Redirecting to rules <a href="https://drive.google.com/file/d/1o8o7uDTNMdY5BcpHWy7s0t6RFLKLWaQE/view?usp=sharing">Rules</a>.</p>
     <script>window.location.replace("https://drive.google.com/file/d/1o8o7uDTNMdY5BcpHWy7s0t6RFLKLWaQE/view?usp=sharing");</script>
 </body>
 </html>
