@@ -37,7 +37,6 @@ header_pages:
   - about.md
   - support_us.md
   - sign-up.md
-  - blog.md
 
 # Set to `true` to show excerpts on the homepage.
 #show_excerpts: false
