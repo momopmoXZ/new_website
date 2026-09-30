@@ -1,0 +1,18 @@
+<aside class="season-announcement" id="season-announcement" aria-label="Season announcement">
+  <div class="season-announcement__content">
+    <span class="season-announcement__badge">Season is live</span>
+    <strong>2026–2027. Let’s build something great.</strong>
+    <a href="{{ '/sign-up/' | relative_url }}">Join the season<span class="season-announcement__arrow" aria-hidden="true"> &rarr;</span></a>
+  </div>
+  <button class="season-announcement__dismiss" type="button" aria-label="Dismiss season announcement">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</aside>
+<script>
+  (() => {
+    const announcement = document.getElementById("season-announcement");
+    announcement.querySelector("button").addEventListener("click", () => {
+      announcement.hidden = true;
+    });
+  })();
+</script>
