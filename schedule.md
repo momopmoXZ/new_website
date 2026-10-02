@@ -14,11 +14,11 @@ title: Schedule
 
 
 	<div class="about-header">
-		<h1>Schedule - London Finals - 27/28 June 2026</h1>
+		<h1></h1>
 	</div>
 
     <section class="about-section">
-		<a href="https://docs.google.com/document/d/14iDye4TrwGCaaFfQB0WDqWMkPeZw_8E43ONnLpQHdr4/edit?usp=sharing">View the schedule here!</a>
+
     </section>
 
     <div class="section">
