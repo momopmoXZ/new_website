@@ -182,18 +182,24 @@
     }
   });
 
-  const form = document.querySelector('[data-contact-form]');
-    if (!form) return;
+  const initialiseContactForm = () => {
+    const form = document.querySelector('[data-contact-form]');
+    if (!form || form.dataset.contactReady === 'true') return;
+
     const status = form.querySelector('[data-contact-status]');
     const button = form.querySelector('[type="submit"]');
+    if (!status || !button) return;
+
+    form.dataset.contactReady = 'true';
     let submitting = false;
 
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
         if (submitting || !form.reportValidity()) return;
+
         submitting = true;
         button.disabled = true;
-        status.textContent = 'Sending your message…';
+        status.textContent = 'Sending your message...';
 
         try {
             const response = await fetch(form.action, {
@@ -202,22 +208,33 @@
                 headers: { Accept: 'application/json' },
                 credentials: 'omit'
             });
-            const result = await response.json();
-            if (!response.ok || !result.success) {
-                throw new Error(result.message || 'We could not submit your message. Please try again later.');
+            const contentType = response.headers.get('content-type') || '';
+            const result = contentType.includes('application/json')
+                ? await response.json()
+                : null;
+
+            if (!response.ok || !result || !result.success) {
+                throw new Error(result?.message || 'Message could not be sent. Please try again.');
             }
-            status.textContent = result.message;
+
             form.reset();
+            status.textContent = 'Message sent.';
         } catch (error) {
             status.textContent = error instanceof TypeError
-                ? 'We could not confirm submission. Please email contact@unibots.uk if you need help.'
+                ? 'Message could not be sent. Please email contact@unibots.uk if you need help.'
                 : error.message;
         } finally {
             submitting = false;
             button.disabled = false;
         }
-    });
+      });
+  };
 
+  if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initialiseContactForm, { once: true });
+  } else {
+      initialiseContactForm();
+  }
 </script>
 </body>
 </html>
