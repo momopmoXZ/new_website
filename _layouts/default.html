@@ -191,6 +191,7 @@
     if (!status || !button) return;
 
     form.dataset.contactReady = 'true';
+    const defaultButtonText = button.textContent;
     let submitting = false;
 
     form.addEventListener('submit', async (event) => {
@@ -199,7 +200,9 @@
 
         submitting = true;
         button.disabled = true;
-        status.textContent = 'Sending your message...';
+        button.textContent = 'Sending...';
+        status.classList.remove('is-success', 'is-error');
+        status.textContent = '';
 
         try {
             const response = await fetch(form.action, {
@@ -218,16 +221,19 @@
             }
 
             form.reset();
-            status.textContent = 'Message sent.';
+            status.classList.add('is-success');
+            status.textContent = 'Your message has been sent. We will be in touch soon!';
         } catch (error) {
+            status.classList.add('is-error');
             status.textContent = error instanceof TypeError
                 ? 'Message could not be sent. Please email contact@unibots.uk if you need help.'
                 : error.message;
         } finally {
             submitting = false;
             button.disabled = false;
+            button.textContent = defaultButtonText;
         }
-      });
+    });
   };
 
   if (document.readyState === 'loading') {
@@ -235,6 +241,7 @@
   } else {
       initialiseContactForm();
   }
+
 </script>
 </body>
 </html>
