@@ -8,6 +8,8 @@
 			</div>
 		</div>
 
+
+
 		<div class="contact-panel__content">
 			<p class="contact-label">Get in touch</p>
 			<h1>Contact us</h1>
@@ -16,22 +18,34 @@
 				and a member of the team will get back to you.
 			</p>
 
-			<form class="contact-form" action="https://api.staticforms.dev/submit" method="POST" data-contact-form>
-				<input type="hidden" name="apiKey" value="sf_71d45b09aa261d0a32cadb0d">
+			<form class="contact-form" action="https://hub.unibots.uk/contact_us/" method="POST" data-contact-form>
+				<input type="hidden" name="apiKey" value="ub_contact_53598bcadd5ae5c18e21194b15ff053d646763e6a65c64b0">
+
+				<div hidden aria-hidden="true">
+					<label for="contact-website">Leave this field empty</label>
+					<input id="contact-website" type="text" name="website" tabindex="-1" autocomplete="off">
+				</div>
 
 				<div class="contact-form__field">
 					<label for="contact-email">Email address</label>
-					<input id="contact-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+					<input id="contact-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" maxlength="254" required>
 				</div>
 
 				<div class="contact-form__field">
 					<label for="contact-message">How can we help?</label>
-					<textarea id="contact-message" name="message" rows="7" placeholder="Write your message here…" required></textarea>
+					<textarea id="contact-message" name="message" rows="7" placeholder="Write your message here…" maxlength="10000" required></textarea>
 				</div>
 
+				<p>
+					We use your email address and message to respond to your enquiry. Messages are sent through
+					MailerSend to our contact mailbox. Please avoid including health information or other sensitive details;
+					use the Hub's event accessibility form for access requirements.
+					Read our <a href="https://hub.unibots.uk/privacy_policy.php">privacy notice</a>.
+				</p>
 				<button class="contact-form__submit" type="submit">Send message</button>
 				<p class="contact-form__status" data-contact-status role="status" aria-live="polite"></p>
 			</form>
+			
 		</div>
 	</section>
 </main>
